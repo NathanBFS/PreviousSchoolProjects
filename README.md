@@ -1,4 +1,4 @@
-PreviousSchoolProjects
+Previous School Projects
 ======================
 
 This repository contains some of my past classwork from my studies at Full Sail university in their Mobile Development program.
