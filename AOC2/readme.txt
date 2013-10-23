@@ -1,1 +1,0 @@
-This is the placeholder file for my AOC2 github repo.  In here you will find folders for all 4 projects labeled by week.
