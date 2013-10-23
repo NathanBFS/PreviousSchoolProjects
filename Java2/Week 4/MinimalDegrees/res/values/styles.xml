@@ -1,0 +1,29 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <style name="AppTheme" parent="android:Theme.Holo.Light.DarkActionBar"/>
+            
+		<style name="title">
+		    <item name="android:textStyle">normal</item>
+		    <item name="android:textColor">@android:color/holo_blue_light</item>
+		    <item name="android:textSize">24sp</item>
+		</style>
+		
+		<style name="minMax">
+		    <item name="android:textStyle">normal</item>
+		    <item name="android:textColor">@android:color/holo_orange_light</item>
+		    <item name="android:textSize">20sp</item>
+		</style>
+		
+		<style name="titleLand">
+		    <item name="android:textStyle">normal</item>
+		    <item name="android:textColor">@android:color/holo_blue_light</item>
+		    <item name="android:textSize">15sp</item>
+		</style>
+		
+		<style name="minMaxLand">
+		    <item name="android:textStyle">normal</item>
+		    <item name="android:textColor">@android:color/holo_orange_light</item>
+		    <item name="android:textSize">15sp</item>
+		</style>
+
+</resources>

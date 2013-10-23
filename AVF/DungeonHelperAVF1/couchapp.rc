@@ -1,0 +1,10 @@
+{
+  "env": {
+    "local": {
+      "db": "http://127.0.0.1:5984/dungeonhelperavf1"
+    }
+  },
+   "cloudant": {
+      "db": "https://ownywhengingsocuoustlifi:oyjevpGeUiJNQGkvuS0N7EbW@nathanbfs.cloudant.com/dungeonhelperavf1"
+    }
+}

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+
+<!--
+  Nathan Buth
+  3-9-2012
+  Project 2
+  MIU 1203
+-->
+
+
+<html>
+        <head>
+            <meta charset="utf-8" />
+            <meta description= "This is an app for registering weapons." />
+            <meta keywords="weapons, government,armory" />
+            <meta name="robots" content="index, follow" />
+            <meta name="viewport" content="user-scalable=no, width=device-width" />
+            <meta name="viewport" content="target-densitydpi=device-dpi" />
+            <meta name="HandheldFriendly" content="True">
+            <meta name="MobileOptimized" content="320" />
+            <title>The Armory A</title>
+            <link rel="stylesheet" href="css/style.css" type="text/css" />
+        </head>
+    </head>
+    <body>
+        <h1>The Armory</h1>
+        <nav>
+            <a href = "#" id = "clearData">Clear Armory</a>
+            <a href = "#" id = "displayData">Show Weapons</a>
+            <a href = "additem.html" id = "addNew" style = "display: none;" >Add New Weapon</a>
+            </br>
+            <a href="index.html" id="home">Back to Home</a>
+        </nav>
+        <form action="#" method="post" id = "weaponForm">
+            <fieldset>
+                <legend>Weapon Details</legend>
+                <p>* Fields are required.</p>
+                <span><ul id="errors"></ul></span>
+                <ul id="fields">
+                    <li>
+                        <label for="wn">*Weapon Name:</label><input type="text" id="wn"/>
+                    </li>
+                    <li id="select"><label for="weapon">*Weapon Category:</label><br /></li>
+                    <li>Is it deadly?:
+                        <ul>
+                            <li><input type="radio" value="Almost Always" id="aalways"  name="deadly" /><label for="aalways">Almost Always</label></li>
+                            <li><input type="radio" value="Sometimes" id="sometimes"  name="deadly" /><label for="sometimes">Sometimes</label></li>
+                            <li><input type="radio" value="Rarely" id="rarely"  name="deadly" /><label for="rarely">Rarely</label></li>
+                        </ul>
+                    </li>
+                    <li>Do you like this weapon?</li>
+                    <li><input type="checkbox" id="liked" value="Yes" class = "checkbox" /><label for="liked">Yes</label></li>
+                    <li>
+
+                        <label for="weapon">Difficulty?</label>
+                        <input type="range" min="0" max="10" value = "0" onchange = "showNumber(this.value)" /><span id="weapon">0</span>
+                        <script type="text/javascript">
+                            function showNumber(newNumber){
+                                document.getElementById("weapon").innerHTML = newNumber;
+                            }
+                        </script>
+                    </li>
+                    <li>
+                        <label for="comments">Any other details?:</label></br><textarea id="comments"></textarea>
+                    </li>
+                </ul>
+            </fieldset>
+            <input type = "submit" value = "Register Weapon" id = "saveData"/>
+
+        </form>
+        <script type="text/javascript" src="js/JSON.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+    </body>
+</html>
+
+<!-- Commented out JQMed form that was broken-->
+<!--<html>
+
+    <head>
+        <!--  Mobile viewport optimized: j.mp/bplateviewport
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Mobile IE needs ClearType for smoothing fonts
+        <meta http-equiv="cleartype" content="on">
+
+        <!-- StyleSheets under here
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
+        <link rel="stylesheet" href="css/style.css" />
+
+        <!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects
+        <script src="js/libs/modernizr.custom.min.js"></script>
+        <script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
+
+    </head>
+    <body>
+        <div data-role="page" id="registration" data-add-back-btn="true" data-theme="a">
+
+            <div data-role="header" data-position="fixed">
+
+                <center>
+                    <p><a href="index.html">The Armory</a></p>
+                </center>
+
+            </div>
+
+            <div data-role="content">
+                <center>
+                    <h1>Register A Weapon</h1>
+                </center>
+                <nav>
+                    <a href="additem.html" id="addNew" rel="external" data-ajax="false" data-role="button" data-mini="true" data-icon="plus" data-inline="true" style="display:none;">Add New Weapon</a>
+                    <a href="#items" id="displayLink" rel="external" data-ajax="false" data-role="button" data-mini="true" data-icon="grid" data-inline="true">Show Weapons</a>
+                    <a href="#clear" id="clear" rel="external" data-ajax="false" data-role="button" data-mini="true" data-icon="delete" data-inline="true">Clear Armory</a>
+                </nav>
+                <form action="#" method="post" id="weaponForm" data-ajax="false">
+                    <fieldset>
+                        <center>
+                            <p>* Fields are required.</p>
+                        </center>
+                        <span><ul id="errors"></ul></span>
+                        <ul id="fields">
+                            <li>
+                                <label for="wn">*Weapon Name:</label><input type="text" id="wn"/>
+                            </li>
+                            <li id="select"><label for="weapon">*Weapon Category:</label><br /></li>
+                            <li data-role="controlgroup" data-mini="true">
+                                <label>Is it deadly?:</label>
+                                <label for="aalways">Almost Always</label>
+                                <input type="radio" name="deadly" id="aalways" value="choice-1" />
+                                <label for="sometimes">Sometimes</label>
+                                <input type="radio" name="deadly" id="sometimes" value="choice-2"  />
+                                <label for="rarely">Rarely</label>
+                                <input type="radio" name="deadly" id="rarely" value="choice-3"  />
+                            </li>
+                            <li>
+                                <label>Do you like this weapon?</label></br>
+                                <input type="checkbox" name="checkbox-0" id="liked" class="custom" data-mini="true" />
+                                <label for="liked">Yes</label>
+                            </li>
+                            <li>
+                                <label for="weapon">Difficulty:</label>
+                                <input type="range" name="slider" id="weapon" value="0" min="0" max="10" data-highlight="true" data-mini="true" />
+                            </li>
+                            <li>
+                                <label for="comments">Any other details?:</label></br><textarea id="comments"></textarea>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <input type = "submit" value = "Register Weapon" id = "saveData"/>
+                </form>
+                </br>
+
+                <div data-role="collapsible" data-collapsed="true" data-inset="true">
+                    <h3>Browse Weapons</h3>
+                    <ul data-role="listview" data-inset="true" data-ajax="false">
+                        <li><a href="index.html#browse" id="browse" border="0" width="35" height="35" alt="Browse">Browse</a></li>
+                    </ul>
+                </div>
+
+                <div data-role="footer">
+                    <div data-role="navbar" data-icon-pos="top">
+                        <ul>
+                            <li><a href="additem.html" rel="external" data-ajax="false" data-inline="true" data-icon="plus" data-add-back-btn="true">Add</a></li>
+                            <li><a href="index.html#browse" id="browseButton" rel="external" data-ajax="false" data-inline="true" data-icon="grid" data-add-back-btn="true">Browse</a></li>
+                            <li><a href="index.html#links" id="link" rel="internal" data-ajax="true" data-inline="true" data-icon="info" data-add-back-btn="true">Links</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+        </div>
+    <script type="text/javascript" src="js/JSON.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    </body>
+</html>-->

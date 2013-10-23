@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wddxPacket version="1.0">
+    <data>
+    <struct>
+        <var name="dungeonName">
+            <string>Lepera</string>
+        </var>
+        <var name="length">
+            <string>Medium</string>
+        </var>
+        <var name="levelGroup">
+            <string>1-5</string>
+        </var>
+        <var name="difficulty">
+            <string>Squire</string>
+        </var>
+        <var name="description">
+            <string>Plagued campground, although inhabited by people they are hostile to outsiders.</string>
+        </var>
+    </struct>
+    <struct>
+        <var name="dungeonName">
+            <string>Telamaris</string>
+        </var>
+        <var name="length">
+            <string>Short</string>
+        </var>
+        <var name="levelGroup">
+            <string>25-30</string>
+        </var>
+        <var name="difficulty">
+            <string>Hero</string>
+        </var>
+        <var name="description">
+            <string>A cornered trap.  Hordes of enemies of all kinds controlled by something...</string>
+        </var>
+    </struct>
+    <struct>
+        <var name="dungeonName">
+            <string>Falimar</string>
+        </var>
+        <var name="length">
+            <string>Long</string>
+        </var>
+        <var name="levelGroup">
+            <string>15-20</string>
+        </var>
+        <var name="difficulty">
+            <string>Master</string>
+        </var>
+        <var name="description">
+            <string>A huge swamp that is home to many trolls.  Keep fire at hand.</string>
+        </var>
+    </struct>
+    <struct>
+        <var name="dungeonName">
+            <string>Hillsboar</string>
+        </var>
+        <var name="length">
+            <string>Medium</string>
+        </var>
+        <var name="levelGroup">
+            <string>5-10</string>
+        </var>
+        <var name="difficulty">
+            <string>Knight</string>
+        </var>
+        <var name="description">
+            <string>A cave in the middle of a hilly area said to have chamber filled with magical items.</string>
+        </var>
+    </struct>
+    </data>
+</wddxPacket>
+

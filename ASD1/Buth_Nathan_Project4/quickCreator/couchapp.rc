@@ -1,0 +1,10 @@
+{
+  "env": {
+    "local": {
+      "db": "http://127.0.0.1:5984/quickcreator"
+    }
+  },
+   "cloudant": {
+      "db": "https://cerreciedentientsteducti:8XKQlXdDs1QFbQFBVGBw7DO6@nathanbfs.cloudant.com/quickcreator"
+    }
+}

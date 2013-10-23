@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+	        
+        <meta charset="utf-8">
+
+        <title>Quick Creator</title>
+
+        <!--  Mobile viewport optimized: j.mp/bplateviewport -->
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Mobile IE needs ClearType for smoothing fonts -->
+        <meta http-equiv="cleartype" content="on">
+
+        <!-- StyleSheets under here -->
+        <link rel="stylesheet" href="style/themes/DH1.min.css" />
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile.structure-1.0.1.min.css" />
+        <link rel="stylesheet" href="style/main.css" />
+
+        <!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
+        <script src="modernizr.custom.min.js"></script>
+
+    </head>
+  <body>
+  <!--****************************************************Home Page******************************************************************-->
+      <div data-role="page" id="home">
+
+          <div data-role="header" data-position="fixed">
+              <center>
+              <p><a href="#home" rel="external" data-ajax="false" data-role="button" data-inline="true">Home</a></p>
+              </center>
+          </div><!-- header -->
+
+          <div data-role="content" data-theme="c">
+
+              <div align="center" data-role="listview" data-type="horizontal">
+                  <a href="createAThing.html" rel="external" data-ajax="false" data-role="button">Create!</a>
+                  <a href="#viewCreations" rel="external" data-ajax="false" data-role="button">View Creations</a>
+              </div>
+
+          </div>
+
+          <div data-role="footer" data-position="fixed">
+              <div data-role="navbar" data-icon-pos="top">
+                  <ul>
+                      <li><a href="createAThing.html" rel="external" data-ajax="false" data-inline="true" data-icon="grid" data-add-back-btn="true">Creator</a></li>
+                      <li><a href="#viewCreations" rel="external" data-ajax="false" data-inline="true" data-icon="grid" data-add-back-btn="true">Viewer</a></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+      <!--****************************************************View Page******************************************************************-->
+      <div data-role="page" id="viewCreations" data-set-back-btn="true">
+
+          <div data-role="header" data-position="fixed">
+              <center>
+                  <p><a href="#home" rel="external" data-ajax="false" data-role="button" data-inline="true">Home</a></p>
+              </center>
+          </div><!-- header -->
+
+                  <div data-role="content" data-theme="c">
+
+                  </div>
+
+          <div data-role="footer" data-position="fixed">
+              <div data-role="navbar" data-icon-pos="top">
+                  <ul>
+                      <li><a href="#home" rel="external" data-ajax="false" data-inline="true" data-icon="home" data-add-back-btn="true">Home</a></li>
+                      <li><a href="createAThing.html/#addCreation" rel="external" data-ajax="false" data-inline="true" data-icon="grid" data-add-back-btn="true">Creator</a></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+        <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
+        <script src="jquery.validate.min.js"></script>
+        <script type="text/javascript" src="jquery.couch.js"></script>
+        <script type="text/javascript" src="main.js"></script>
+  </body>
+</html>

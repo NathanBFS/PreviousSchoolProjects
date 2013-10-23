@@ -1,0 +1,47 @@
+img.branding{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img.logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+h3{
+    text-align: center;
+}
+
+section.devInfo{
+    margin: 5px;
+    padding: 25px;
+    background-color: #5c5c5c;
+    border: 1px black solid;
+}
+
+
+
+img.devPortrait{
+    border: 1px solid black;
+    margin: 5px;
+}
+
+section.devContent{
+    display:block;
+}
+
+p.devContent{
+    margin: 25px;
+}
+
+a.notificationButton{
+    display: block;
+}
+
+h4{
+    font-style: italic;
+}
+

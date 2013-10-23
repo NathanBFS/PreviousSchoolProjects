@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/gray"
+        android:title="Gray"
+        android:showAsAction="never"
+    />
+    
+    <item
+        android:id="@+id/relief"
+        android:title="Relief"
+        android:showAsAction="never"
+    />
+    
+    <item
+        android:id="@+id/blur"
+        android:title="Blur"
+        android:showAsAction="never"
+    />
+    
+    <item
+        android:id="@+id/oil"
+        android:title="Oil"
+        android:showAsAction="never"
+    />
+    
+    <item
+        android:id="@+id/neon"
+        android:title="Neon"
+        android:showAsAction="never"
+    />
+    
+    <item
+        android:id="@+id/pixelate"
+        android:title="Pixelate"
+        android:showAsAction="never"
+    />
+    
+    <item
+        android:id="@+id/tv"
+        android:title="Old TV"
+        android:showAsAction="never"
+    />
+    
+    <item
+        android:id="@+id/invert"
+        android:title="Invert"
+        android:showAsAction="never"
+    />
+    
+    <item
+        android:id="@+id/engraving"
+        android:title="Engraving"
+        android:showAsAction="never"
+    />
+    
+    <item
+        android:id="@+id/old"
+        android:title="Old"
+        android:showAsAction="never"
+    />
+    
+    <item
+        android:id="@+id/sharpen"
+        android:title="Sharpen"
+        android:showAsAction="never"
+    />
+    
+    <item
+        android:id="@+id/light"
+        android:title="Light"
+        android:showAsAction="never"
+    />
+    
+    <item
+        android:id="@+id/lomo"
+        android:title="Lomo"
+        android:showAsAction="never"
+    />
+
+    <item
+        android:id="@+id/hdr"
+        android:title="HDR"
+        android:showAsAction="never"
+    />
+    
+    <item
+        android:id="@+id/gaussian"
+        android:title="Gaussian"
+        android:showAsAction="never"
+    />
+    
+    <item
+        android:id="@+id/glow"
+        android:title="Glow"
+        android:showAsAction="never"
+    />
+    
+    <item
+        android:id="@+id/sketch"
+        android:title="Sketch"
+        android:showAsAction="never"
+    />
+    
+    
+    
+</menu>
