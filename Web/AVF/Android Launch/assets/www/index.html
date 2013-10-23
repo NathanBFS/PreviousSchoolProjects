@@ -1,0 +1,708 @@
+<!doctype html>
+
+<!--
+ Nathan Buth
+ 07-04-2012
+ Project 1
+ AVF 1207
+-->
+
+<html lang="en">
+    <head>
+	        
+        <meta charset="utf-8">
+
+        <title>Dungeon Helper Launch</title>
+
+        <!--  Mobile viewport optimized: j.mp/bplateviewport -->
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Mobile IE needs ClearType for smoothing fonts -->
+        <meta http-equiv="cleartype" content="on">
+
+        <!-- StyleSheets under here -->
+        <link rel="stylesheet" href="css/themes/DH1.min.css" />
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile.structure-1.0.1.min.css" />
+        <link rel="stylesheet" href="css/style.css" />
+
+        <!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
+        <script src="modernizr.custom.min.js"></script>
+        <script src="cordova-1.9.0.js"></script>
+        <link href="http://vjs.zencdn.net/c/video-js.css" rel="stylesheet">
+        <script src="http://vjs.zencdn.net/c/video.js"></script>
+
+    </head>
+    <body>
+    <!-------------------------------------Home Page------------------------------------------------------->
+        <div data-role="page" id="home" data-theme="c">
+            <section data-role="header" data-position="fixed">
+
+                <p><a href="#home" rel="external" data-ajax="false"><img class="branding" src="images/branding.png" width="105px" height="40px"></a></p>
+
+            </section>
+
+                <section data-role="content">
+
+                    <section class="heading">
+
+                        <img class="logo" src="images/logo.png" width="195px" height="195px"/>
+
+                    </section>
+
+                    <section  data-role="fieldcontain" class="primaryLinks" data-inset="true">
+
+                        <h3>Navigation</h3>
+
+                        <hr/>
+
+                        <ul data-role="listview" class="navigation" data-inset="true">
+
+                            <li><a href="#crudAndGithub" rel="external" data-ajax="false">CRUD Apps & Github</a></li>
+                            <li><a href="#nativeFeatures" rel="external" data-ajax="false">Native Features</a></li>
+                            <li><a href="#research" rel="external" data-ajax="false">Research Page</a></li>
+
+                        </ul>
+
+                    </section>
+
+                    <section data-role="fieldcontain" class="devInfo" data-inset="true">
+
+                        <h3 class="devHeading">Developer Info</h3>
+
+                        <hr/>
+
+                        <p><img src="images/selfportrait.jpg" class="devPortrait" width="180px" height="240px" border="0" align="left"/></p>
+                        <section class="devContent">
+                            <p class="devContent">Nathan Buth</p>
+                            <p class="devContent">AVF1207</p>
+                            <p class="devContent">Full Sail Online</p>
+                            <p class="devContent">AVF</p>
+                            <p class="devContent"><a href="https://plus.google.com/u/0/106023745068839045104/posts">  Google+</a></p>
+                        </section>
+
+                    </section>
+
+            </section>
+
+            <section data-role="footer" data-position="fixed">
+
+                <section data-role="navbar">
+                    <ul>
+                        <li><a href="#androidApp" rel="external" data-ajax="false" data-inline="true" data-add-back-btn="true">Android Demo</a></li>
+                        <li><a href="#iosApp" rel="external" data-ajax="false" data-inline="true" data-add-back-btn="true">iOS Demo</a></li>
+                    </ul>
+                </section>
+
+            </section>
+        </div>
+                
+        <!--************************************Crud & Github Page*********************************************************************-->
+
+        <div data-role="page" id="crudAndGithub" data-add-back-btn="true" data-theme="c">
+
+            <section data-role="header" data-position="fixed">
+
+                <p><a href="#home" rel="external" data-ajax="false"><img class="branding" src="images/branding.png" width="105px" height="40px"></a></p>
+
+            </section>
+            
+            <section data-role="content">
+
+                <h3>CRUD Apps</h3>
+                
+                <hr/>
+                
+                <ul data-role="listview" class="crudApps" data-inset="true">
+
+                    <li><a href="http://nathanbfs.cloudant.com/dungeonhelperavf1/_design/dungeonhelperavf1/index.html" rel="external" data-ajax="false">Old CRUD Application</a></li>
+                    <li><a href="" rel="external" data-ajax="false" >New CRUD Application</a></li>
+                    
+                </ul>
+                
+                <h3>Github Link</h3>
+
+                <hr/>
+
+                <a href="https://github.com/NathanBFS/MDV-Projects/tree/master/AVF" rel="external" data-ajax="false" type="button">Github Page</a>
+                
+            </section>
+
+            <section data-role="footer" data-position="fixed">
+
+                <section data-role="navbar">
+                    <ul>
+                        <li><a href="#androidApp" rel="external" data-ajax="false" data-inline="true" data-add-back-btn="true">Android Demo</a></li>
+                        <li><a href="#iosApp" rel="external" data-ajax="false" data-inline="true" data-add-back-btn="true">iOS Demo</a></li>
+                    </ul>
+                </section>
+
+            </section>
+            
+        </div>
+
+        <!--********************************Native Features Page********************************************************************-->
+
+        <div data-role="page" id="nativeFeatures" data-add-back-btn="true" data-theme="c">
+
+            <section data-role="header" data-position="fixed">
+
+                <p><a href="#home" rel="external" data-ajax="false"><img class="branding" src="images/branding.png" width="105px" height="40px"></a></p>
+
+            </section>
+
+            <section data-role="content">
+
+                <h3>Native Android & iOS Features</h3>
+
+                <hr/>
+
+                <ul data-role="listview" class="crudApps" data-inset="true">
+
+                    <li><a href="#geolocation" rel="external" data-ajax="false">Geolocation</a></li>
+                    <li><a href="#notification" rel="external" data-ajax="false" >Notification</a></li>
+                    <!--<li><a href="#accelerometer" rel="external" data-ajax="false" ></a></li>-->
+
+                </ul>
+
+                <h3>Native Android Features</h3>
+
+                <hr/>
+
+                <ul data-role="listview" class="crudApps" data-inset="true">
+
+                    <li><a href="#androidCamera" rel="external" data-ajax="false">Camera</a></li>
+                    <li><a href="#fileAndroid" rel="external" data-ajax="false">File</a></li>
+
+                </ul>
+
+                <h3>Native iOS Features</h3>
+
+                <hr/>
+
+                <ul data-role="listview" class="crudApps" data-inset="true">
+
+                    <li><a href="#iOSCamera" rel="external" data-ajax="false">Camera</a></li>
+                    <li><a href="#fileiOS" rel="external" data-ajax="false">File</a></li>
+
+                </ul>
+
+            </section>
+
+            <section data-role="footer" data-position="fixed">
+
+                <section data-role="navbar">
+                    <ul>
+                        <li><a href="#androidApp" rel="external" data-ajax="false" data-inline="true" data-add-back-btn="true">Android Demo</a></li>
+                        <li><a href="#iosApp" rel="external" data-ajax="false" data-inline="true" data-add-back-btn="true">iOS Demo</a></li>
+                    </ul>
+                </section>
+
+            </section>
+
+        </div>
+
+        <!--****************************GeoLocation Page************************************************************************-->
+
+        <div data-role="page" id="geolocation" data-add-back-btn="true" data-theme="c">
+
+            <section data-role="header" data-position="fixed">
+
+                <p><a href="#home" rel="external" data-ajax="false"><img class="branding" src="images/branding.png" width="105px" height="40px"></a></p>
+
+            </section>
+
+            <section data-role="content">
+
+                <h3>GeoLocation</h3>
+
+                <hr/>
+
+                <a href="#" id="getGeolocationButton" rel="external" data-ajax="false" type="button">Get Location</a>
+
+                <section data-role="content" id="mapArea" data-inset="true">
+
+                </section>
+
+
+
+            </section>
+
+            <section data-role="footer" data-position="fixed">
+
+                <section data-role="navbar">
+                    <ul>
+                        <li><a href="#androidApp" rel="external" data-ajax="false" data-inline="true" data-add-back-btn="true">Android Demo</a></li>
+                        <li><a href="#iosApp" rel="external" data-ajax="false" data-inline="true" data-add-back-btn="true">iOS Demo</a></li>
+                    </ul>
+                </section>
+
+            </section>
+
+        </div>
+
+        <!--****************************Notification Page************************************************************************-->
+
+        <div data-role="page" id="notification" data-add-back-btn="true" data-theme="c">
+
+            <section data-role="header" data-position="fixed">
+
+                <p><a href="#home" rel="external" data-ajax="false"><img class="branding" src="images/branding.png" width="105px" height="40px"></a></p>
+
+            </section>
+
+            <section data-role="content">
+
+                <h3>Notification</h3>
+
+                <hr/>
+
+                <a href="#" id="alertNotificationButton" class="notificationButton" rel="external" data-ajax="false" type="button">Alert</a>
+                <a href="#" id="confirmNotificationButton" class="notificationButton" rel="external" data-ajax="false" type="button">Confirm</a>
+                <a href="#" id="beepNotificationButton" class="notificationButton" rel="external" data-ajax="false" type="button">Beep</a>
+                <a href="#" id="vibrateNotificationButton" class="notificationButton" rel="external" data-ajax="false" type="button">Vibrate</a>
+
+            </section>
+
+            <section data-role="footer" data-position="fixed">
+
+                <section data-role="navbar">
+                    <ul>
+                        <li><a href="#androidApp" rel="external" data-ajax="false" data-inline="true" data-add-back-btn="true">Android Demo</a></li>
+                        <li><a href="#iosApp" rel="external" data-ajax="false" data-inline="true" data-add-back-btn="true">iOS Demo</a></li>
+                    </ul>
+                </section>
+
+            </section>
+
+        </div>
+
+        <!--****************************Accelerometer Page************************************************************************-->
+
+        <div data-role="page" id="accelerometer" data-add-back-btn="true" data-theme="c">
+
+            <section data-role="header" data-position="fixed">
+
+                <p><a href="#home" rel="external" data-ajax="false"><img class="branding" src="images/branding.png" width="105px" height="40px"></a></p>
+
+            </section>
+
+            <section data-role="content">
+
+                <h3>Accelerometer</h3>
+
+                <hr/>
+
+
+            </section>
+
+            <section data-role="footer" data-position="fixed">
+
+                <section data-role="navbar">
+                    <ul>
+                        <li><a href="#androidApp" rel="external" data-ajax="false" data-inline="true" data-add-back-btn="true">Android Demo</a></li>
+                        <li><a href="#iosApp" rel="external" data-ajax="false" data-inline="true" data-add-back-btn="true">iOS Demo</a></li>
+                    </ul>
+                </section>
+
+            </section>
+
+        </div>
+
+        <!--****************************Android Camera Page************************************************************************-->
+
+        <div data-role="page" id="androidCamera" data-add-back-btn="true" data-theme="c">
+
+            <section data-role="header" data-position="fixed">
+
+                <p><a href="#home" rel="external" data-ajax="false"><img class="branding" src="images/branding.png" width="105px" height="40px"></a></p>
+
+            </section>
+
+            <section data-role="content">
+
+                <h3>Camera</h3>
+
+                <hr/>
+
+                <a href="#" id="takeAndroidPicture" class="notificationButton" rel="external" data-ajax="false" type="button">Take Picture</a>
+
+                <img id="myAndroidImage">
+                                
+            </section>
+
+            <section data-role="footer" data-position="fixed">
+
+                <section data-role="navbar">
+                    <ul>
+                        <li><a href="#androidApp" rel="external" data-ajax="false" data-inline="true" data-add-back-btn="true">Android Demo</a></li>
+                        <li><a href="#iosApp" rel="external" data-ajax="false" data-inline="true" data-add-back-btn="true">iOS Demo</a></li>
+                    </ul>
+                </section>
+
+            </section>
+
+        </div>
+
+        <!--****************************iOS Camera Page************************************************************************-->
+
+        <div data-role="page" id="iOSCamera" data-add-back-btn="true" data-theme="c">
+
+            <section data-role="header" data-position="fixed">
+
+                <p><a href="#home" rel="external" data-ajax="false"><img class="branding" src="images/branding.png" width="105px" height="40px"></a></p>
+
+            </section>
+
+            <section data-role="content">
+
+                <h3>Camera</h3>
+
+                <hr/>
+
+                <a href="#" id="takeiOSPicture" class="notificationButton" rel="external" data-ajax="false" type="button">Take Picture</a>
+
+                <img id="myiOSImage">
+
+            </section>
+
+            <section data-role="footer" data-position="fixed">
+
+                <section data-role="navbar">
+                    <ul>
+                        <li><a href="#androidApp" rel="external" data-ajax="false" data-inline="true" data-add-back-btn="true">Android Demo</a></li>
+                        <li><a href="#iosApp" rel="external" data-ajax="false" data-inline="true" data-add-back-btn="true">iOS Demo</a></li>
+                    </ul>
+                </section>
+
+            </section>
+
+        </div>
+
+        <!--****************************Android File Page************************************************************************-->
+
+        <div data-role="page" id="fileAndroid" data-add-back-btn="true" data-theme="c">
+
+            <section data-role="header" data-position="fixed">
+
+                <p><a href="#home" rel="external" data-ajax="false"><img class="branding" src="images/branding.png" width="105px" height="40px"></a></p>
+
+            </section>
+
+            <section data-role="content">
+
+                <h3>File</h3>
+
+                <hr/>
+
+                <a href="#" id="writeAndroidFile" class="notificationButton" rel="external" data-ajax="false" type="button">Write File</a>
+
+                <a href="#" id="readAndroidFile" class="notificationButton" rel="external" data-ajax="false" type="button">Read File</a>
+
+            </section>
+
+            <section data-role="footer" data-position="fixed">
+
+                <section data-role="navbar">
+                    <ul>
+                        <li><a href="#androidApp" rel="external" data-ajax="false" data-inline="true" data-add-back-btn="true">Android Demo</a></li>
+                        <li><a href="#iosApp" rel="external" data-ajax="false" data-inline="true" data-add-back-btn="true">iOS Demo</a></li>
+                    </ul>
+                </section>
+
+            </section>
+
+        </div>
+
+        <!--****************************iOS File Page************************************************************************-->
+
+        <div data-role="page" id="fileiOS" data-add-back-btn="true" data-theme="c">
+
+            <section data-role="header" data-position="fixed">
+
+                <p><a href="#home" rel="external" data-ajax="false"><img class="branding" src="images/branding.png" width="105px" height="40px"></a></p>
+
+            </section>
+
+            <section data-role="content">
+
+                <h3>File</h3>
+
+                <hr/>
+
+                <a href="#" id="writeiOSFile" class="notificationButton" rel="external" data-ajax="false" type="button">Write File</a>
+
+                <a href="#" id="readiOSFile" class="notificationButton" rel="external" data-ajax="false" type="button">Read File</a>
+
+            </section>
+
+            <section data-role="footer" data-position="fixed">
+
+                <section data-role="navbar">
+                    <ul>
+                        <li><a href="#androidApp" rel="external" data-ajax="false" data-inline="true" data-add-back-btn="true">Android Demo</a></li>
+                        <li><a href="#iosApp" rel="external" data-ajax="false" data-inline="true" data-add-back-btn="true">iOS Demo</a></li>
+                    </ul>
+                </section>
+
+            </section>
+
+        </div>
+
+        <!--****************************Research Page************************************************************************-->
+
+        <div data-role="page" id="research" data-add-back-btn="true" data-theme="c">
+
+            <section data-role="header" data-position="fixed">
+
+                <p><a href="#home" rel="external" data-ajax="false"><img class="branding" src="images/branding.png" width="105px" height="40px"></a></p>
+
+            </section>
+
+            <section data-role="content">
+
+                <h3>Research By Week</h3>
+
+                <hr/>
+
+                <ul data-role="listview" class="weeklyResearch" data-inset="true">
+
+                    <li><a href="#week1Research" rel="external" data-ajax="false">Week 1 Research</a></li>
+                    <li><a href="#week2Research" rel="external" data-ajax="false" >Week 2 Research</a></li>
+                    <li><a href="#week3Research" rel="external" data-ajax="false" >Week 3 Research</a></li>
+
+                </ul>
+
+            </section>
+
+            <section data-role="footer" data-position="fixed">
+
+                <section data-role="navbar">
+                    <ul>
+                        <li><a href="#androidApp" rel="external" data-ajax="false" data-inline="true" data-add-back-btn="true">Android Demo</a></li>
+                        <li><a href="#iosApp" rel="external" data-ajax="false" data-inline="true" data-add-back-btn="true">iOS Demo</a></li>
+                    </ul>
+                </section>
+
+            </section>
+
+        </div>
+
+        <!--****************************Week 1 Research Page************************************************************************-->
+    
+        <div data-role="page" id="week1Research" data-add-back-btn="true" data-theme="c">
+    
+            <section data-role="header" data-position="fixed">
+    
+                <p><a href="#home" rel="external" data-ajax="false"><img class="branding" src="images/branding.png" width="105px" height="40px"></a></p>
+    
+            </section>
+    
+            <section data-role="content">
+
+                <h3>Week 1 Video</h3>
+
+                <hr/>
+
+                <video id="avfWeek1Video" class="video-js vjs-default-skin" controls
+                    preload="auto" width="100%" data-setup="{}">
+                    <source src="http://dl.dropbox.com/u/91577977/AVFWeek1.mp4" type="video/mp4" >
+                    <source src="http://dl.dropbox.com/u/91577977/AVFWeek1.webm" type="video/webm" >
+                </video>                
+
+                <hr/>
+
+                <h3>Week 1 Research</h3>
+
+                <hr/>
+
+                <h4>What types of native features (on Android and iOS devices) would you be able to implement with the use of HTML/CSS/JS only?</h4>
+
+                <p>A few native features that are able to be utilized just using HTML, CSS, and Javascript are the camera functions, geolocation, accelerometer, contacts, file storage, media, network and notifications.</p>
+
+                <h4>For your CRUD app revision and/or Demo App components, which of these do you think you will implement?</h4>
+
+                <p>I know for sure that I will at least be implementing the camera, contacts, notifications, and accelerometer in the revision of my CRUD app.</p>
+
+                <h4>Briefly describe some past 'lessons learned' regarding workflow as it relates to research, design, development, etc.</h4>
+
+                <p>Some past lessons I have learned regarding workflow as it applies to research, design, development and other similar topics is that you should always leave yourself an adequate amount of time.  The worst thing to do for your efficiency during these kinds of topics is forcing yourself into a position of having to rush.  I think I have learned this but am still in the process of taking action on it.</p>
+
+                <h4>Please describe any design intentions you may have for the AVF Demo app and the revised/new version of your CRUD app.</h4>
+
+                <p>I plan on designing my apps differently from eachother so that they fit in with the different OSs but still remain a consistent experience.  I especially look forward to attempting to design the Android version to look great across as many versions of Android as possible.  I am thinking that the design will probably be similar to that of the Squared app.</p>
+
+                <h4>If not covered above, please also describe any functionality intentions you may have for both the AVF Demo app and the revised/new version of your CRUD app.</h4>
+
+                <p>I am still unsure how I am going to implement the different forms of functionality but I am wanting to have it so that by using media and contacts on iOS a user can send dungeon or character data to a friend.  On Android I am wanting to integrate it with Android's native sharing system via the network to do a similar thing but in more forms.</p>
+
+
+
+    
+            </section>
+    
+            <section data-role="footer" data-position="fixed">
+    
+                <section data-role="navbar">
+                    <ul>
+                        <li><a href="#androidApp" rel="external" data-ajax="false" data-inline="true" data-add-back-btn="true">Android Demo</a></li>
+                        <li><a href="#iosApp" rel="external" data-ajax="false" data-inline="true" data-add-back-btn="true">iOS Demo</a></li>
+                    </ul>
+                </section>
+    
+            </section>
+    
+        </div>
+    
+        <!--****************************Week 2 Research Page************************************************************************-->
+    
+        <div data-role="page" id="week2Research" data-add-back-btn="true" data-theme="c">
+    
+            <section data-role="header" data-position="fixed">
+    
+                <p><a href="#home" rel="external" data-ajax="false"><img class="branding" src="images/branding.png" width="105px" height="40px"></a></p>
+    
+            </section>
+    
+            <section data-role="content">
+   
+                <h3>Week 2 Video</h3>
+                
+                <hr/>
+                
+                <video id="avfWeek2Video" class="video-js vjs-default-skin" controls
+                    preload="auto" width="100%" data-setup="{}">
+                    <source src="http://dl.dropbox.com/u/91577977/avfweek2.mp4" type="video/mp4" >
+                    <source src="http://dl.dropbox.com/u/91577977/AVFWeek1.webm" type="video/webm" >
+                </video>
+                
+                <hr/>
+                
+                <h3>Week 2 Research</h3>
+    
+                <hr/>
+    
+                <h4>What are some of the ways that you could change your HTML on your Demo app to be more accessible? (Remember, you can use the Section tag with jQuery, for instance</h4>
+                
+                <p>I could change my html to be more accessible in my demo app by applying more intricate CSS to it and making a desktop version.  Right now, the CSS that I used is quite limited and does not help much with making a more user friendly layout.  Especially if viewed from a device larger than a phone, like a table or computer.</p>
+                
+                <p>I can also possible use javascript to make it so that a visually impaired person could make the site change its colors and resize to the point that they could view it easily.</p>
+                
+                <p>Speech synthesis would also be a great feature to add.  This could be as simple as verbal confirmation that a button is pressed or that something has happened(e.g.
+                "Your location has been pinpointed" during geolocation) or something as complicated as making the entire app have the ability to be voice-overed.<p>
+                
+                <h4>Visit a video service on the web (like YouTube) and search for "Screen Reader Demo" and "Mobile Screen Reader" - what are some of the common frustrations (or common support mechanisms) that you see among the examples that are given - how could you fix them (or use them)?</h4>
+                
+                <p>I would say the largest frustration is that the words are not always pronounced properly and can therefore be cause of error if involved with a how-to document.  To fix this I would propose that all voice dictation services branch off of either Google's or Amazon's speech synthesis APIs.  Both are extremely accurate pieces of voice to text and text to voice software.  If they were used more often then people that need these programs would be able to have clearer, more accurate results and in turn be in a
+                position less likely of error.</p>
+                
+                <h4>Devices: Please list two devices (and some of their features) that are made specifically to support Accessibility.</h4>
+                
+                <p>I would say the two most incredible and useful accessibility devices are the ones that are often used for other purposes.  Smart phones and tablets both represent a new plethora of accessibilty apps and therefore I consider both of them accessibility devices.  Cell phones are much more mobile and have a variety of sensors to help a person with disabilities out.  They are used to help people see, speak, and hear.  One of the most interesting instances of a smart phone being used as a accessibilty device would be found in an idea of Catharine McNally.  She is a woman who lost her hearing due to meningitis but now uses her cochlear implant to be able to hear.  This hearing is limited but it is still partially there.  She often does things to help make the world more accessible to people with disabilities, especially the deaf.  One of these things she has spoken about is video chatting through phones.  She called it a great tool for people to learn to lip reading better but also stated that she looks forward to the day when there is actually live captioning available in such programs.  Tablets are very similar to phones except less portable due to their size.  It is because of this extra size though that they have even more to offer.  A while back I read a sad story about a child that is unable to communicate with their parents through words.  The parents got an iPad for their child and downloaded an app that through symbols, allows him to communicate with them.  Although not completely on topic, there is also a program on the iPad that allows people to communicate with different species of primates flawlessly.  Via gestures, voice input, text to speech, and a screen that is practically unlimited when it comes to its variability tablets serve as the greates tool of accessibility.</p>
+                
+                <h4>Mobile Apps: Please list two apps (either Android or iOS, or both) that are made specifically to support Accessibility.</h4>
+                
+                <p>Mobile Accessibilty is one of the first apps that strikes my mind when talking about accessibility.  It is an Android app designed to help blind people navigate their phone with little to no trouble by making available the primary apps in one location(phone, contacts, message, email, etc.).  What I find unique about this app however is that it has many versions of it.  Typically I would not agree with this system but there is a good reason on why they approached the market in this manner.  Each version is the same app but in a different language.  This is great because if you are blind you do not want to have to navigate a dropdown or some other form of selection system to choose your language.  Being able to just download it in your language and use it immediately is a great asset.</p>
+                
+                <p>Another app that works great in helping people with disabilities is Proloquo2Go.  It uses symbols, clear labels, speech synthesis and a keyboard to allow people of varying literacy levels that can't talk the ability to communicate.  Whatever the symbols do not cover, the user can type out on the keyboard provided, either way a voice will say what they pick or type.  This app is fantastic for people with special needs and people that are entirely mute.  Using this app, they can finally have a voice of their own. </p>
+    
+            </section>
+    
+            <section data-role="footer" data-position="fixed">
+    
+                <section data-role="navbar">
+                    <ul>
+                        <li><a href="#androidApp" rel="external" data-ajax="false" data-inline="true" data-add-back-btn="true">Android Demo</a></li>
+                        <li><a href="#iosApp" rel="external" data-ajax="false" data-inline="true" data-add-back-btn="true">iOS Demo</a></li>
+                    </ul>
+                </section>
+    
+            </section>
+    
+        </div>
+    
+        <!--****************************Week 3 Research************************************************************************-->
+    
+        <div data-role="page" id="week3Research" data-add-back-btn="true" data-theme="c">
+    
+            <section data-role="header" data-position="fixed">
+    
+                <p><a href="#home" rel="external" data-ajax="false"><img class="branding" src="images/branding.png" width="105px" height="40px"></a></p>
+    
+            </section>
+    
+            <section data-role="content">
+
+                <h3>Week 3 Video</h3>
+
+                <hr/>
+
+                <video id="avfWeek3Video" class="video-js vjs-default-skin" controls
+                       preload="auto" width="100%" data-setup="{}">
+                    <source src="http://dl.dropbox.com/u/91577977/avfweek3.mp4" type="video/mp4" >
+                    <source src="http://dl.dropbox.com/u/91577977/avfweek3.webm" type="video/webm" >
+                </video>
+
+                <hr/>
+
+                <h3>Week 3 Research</h3>
+    
+                <hr/>
+
+                <h4>What are the 'top selling' app categories in the U.S.?</h4>
+
+                <p>In the United States the top selling app category is games.</p>
+
+                <h4>What are the 'top selling' app categories in Japan?</h4>
+
+                <p>In Japan the top selling app category is also games.</p>
+
+                <h4>What are the 'top selling' app categories in Great Britain?</h4>
+
+                <p>In the UK the top selling app category is once again, games.</p>
+
+                <h4>Based on your three answers above, what might you infer about each of the markets listed?</h4>
+
+                <p>At this moment, due to the availability of mobile games, people worldwide are actually investing money in entertainment.  Parents that at one point in time could never sit down and game due to the chaos of their house or their busy work schedule can simply take out their phone, and play a game for even just a few minutes at time.  These same people have also realized that a good way to lessen some of the chaos in their lives is to allow their kids to play some of these games as well.  The rising desire for mobile entertainment along with the advancing hardware in mobile devices has allowed developers to start provding even more emersive games with better physics, graphics, and playability in general.  Simply put, people are getting bored on the go and mobile game development is booming because of it.</p>
+
+                <h4>What percentage of Android users have the latest/greatest OS in the U.S? in Japan? in Great Britain? How might these differences impact development?</h4>
+
+                <p>If you go off of actual OS versions a very very small percentage worldwide of users have the latest and greatest Android, Jellybean(4.1).  This is primarily due to it only being available on a couple of devices though, one of those just now becoming available.  The fact it was released only a few weeks ago helps with that as well.  After that you have Ice Cream Sandwich(4.0).  It is a little above 10% at the moment but is starting to rise quickly due to the update finally being released by manufacturers and carriers to the people alongside the recent arrivals of phones like the Samsung Galaxy S III.  Despit this you could argue that over two thirds of Android users have the latest and greatest version.  Gingerbread(2.3) has become quite stable and is running the latest versions of the majority of Google Apps.  Google Apps are the foundation of Android and so you could argue that most devices re up to date.</p>
+
+                <p>These numbers should not impact development at all.  Yes, high end graphics are not going to run on most older phones but the majority of apps don't have high quality, 3D graphics anyways.  If programming for Android properly, a developer should not worry themselves about different screen sizes or Android OS.  Screen sizes and resolutions are taken care of by the DP system for design and although you may want to change some parts of the UI for different operating systems, the changes that you would make are very minor and add little to no extra time on development.</p>
+
+                <h4>What is the average cost and bandwidth limits per user (in general) in each of the three markets? How may this impact development?</h4>
+
+                <p>Bandwidth on average costs $3.33 per mbps in the US, in Japan it is about $0.27 per mbps, and around $3.00 in the UK.  If costs for bandwidth continue to raise(as they have been) and unlimited plans disappear entirely I think it could mean a large drop in download rates.  That being said it would stabilize and people will still continue to download apps.  Also, with Wifi people can still buy and download apps without cutting into their mobile bandwidth.</p>
+
+                <h4>And, finally, what would be your suggested strategy in project topic and global market choice? Feel free to have a first and second choice.</h4>
+
+                <p>I would recommend focusing on the utility market.  Game development is more complicated than many other forms of development and so can cost more time than what you get back, despite being the top selling market.  After it, it seemed that Utility apps were the second best selling and they don't always take as much time to develop so I would stick to them.  I would also recommend going after the US market first, just due to it being local and familiar.  It would be a better test environment and an even better release environment.  After that I would recommend UK, Australia and Europe due to the similarities in culture and language.  From there to just spread to areas with the highest download rates in South America, Asia, Africa, and Russia.</p>
+
+            </section>
+    
+            <section data-role="footer" data-position="fixed">
+    
+                <section data-role="navbar">
+                    <ul>
+                        <li><a href="#androidApp" rel="external" data-ajax="false" data-inline="true" data-add-back-btn="true">Android Demo</a></li>
+                        <li><a href="#iosApp" rel="external" data-ajax="false" data-inline="true" data-add-back-btn="true">iOS Demo</a></li>
+                    </ul>
+                </section>
+    
+            </section>
+    
+        </div>
+
+    <!-- JavaScript under here -->
+        <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
+        <script type="text/javascript" src="main.js"></script>
+        <script type="text/javascript" src="notification.js"></script>
+        <script type="text/javascript" src="geolocation.js"></script>
+        <script type="text/javascript" src="camera.js"></script>
+        <script type="text/javascript" src="file.js"></script>
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=true"></script>
+    </body>
+</html>

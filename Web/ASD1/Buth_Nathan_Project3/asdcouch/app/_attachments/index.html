@@ -1,0 +1,1259 @@
+<!doctype html>
+
+<!--
+  Nathan Buth
+  3-22-2012
+  Project 4
+  MIU 1203
+-->
+
+<html lang="en">
+    <head>
+	        
+        <meta charset="utf-8">
+
+        <title>Dungeon Helper A</title>
+
+        <!--  Mobile viewport optimized: j.mp/bplateviewport -->
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Mobile IE needs ClearType for smoothing fonts -->
+        <meta http-equiv="cleartype" content="on">
+
+        <!-- StyleSheets under here -->
+        <link rel="stylesheet" href="css/themes/DH1.min.css" />
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile.structure-1.0.1.min.css" />
+        <link rel="stylesheet" href="css/style.css" />
+
+        <!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
+        <script src="/modernizr.custom.min.js"></script>
+
+    </head>
+    <body>
+ 	<!--****************************************Home Page*********************************************************-->
+    	 <div data-role="page" id="home" data-theme="c">
+
+            <div data-role="header" data-position="fixed">
+
+                <p><a href="#home"><img style="margin:0 auto;display:block" src="images/branding.png" width="105px" height="40px"></a></p>
+                
+            </div><!-- header -->
+
+            <div data-role="content" data-theme="c">
+
+                <img style="margin:0 auto;display:block" src="images/logo.png" width="195px" height="195px" />
+                
+                <div align="center">
+                	<h3>Please choose a section.</h3>
+                </div>
+                
+            	<div align="center" data-role="controlgroup" data-type="horizontal">
+                    <a href=#dungeonHome rel="external" data-ajax="false" data-role="button" data-inline="true">Dungeon</a>
+                    <a href=#characterHome rel="external" data-ajax="false" data-role="button" data-inline="true">Character</a>
+            	</div>
+                     
+            </div>
+            
+            <div data-role="footer" data-position="fixed">
+
+                <div data-role="navbar" data-icon-pos="top">
+                    <ul>
+                    	<li><a href="#browse" rel="external" data-ajax="false" data-inline="true" data-icon="search" data-add-back-btn="true">Browse</a></li>
+                    	<li><a href="#dungeonHome" rel="external" data-ajax="false" data-inline="true" data-icon="grid" data-add-back-btn="true">Dungeon</a></li>
+                        <li><a href="#characterHome" rel="external" data-ajax="false" data-inline="true" data-icon="grid" data-add-back-btn="true">Character</a></li>
+                        <li><a href="#links" rel="internal" data-ajax="true" data-inline="true" data-icon="info" data-add-back-btn="true">Links</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    <!--****************************************Dungeon Home Page**************************************************-->
+        <div data-role="page" id="dungeonHome" data-add-back-btn="true" data-theme="c">
+
+            <div data-role="header" data-position="fixed">
+
+                <p><a href="#home"><img style="margin:0 auto;display:block" src="images/branding.png" width="105px" height="40px"></a></p>
+                
+            </div><!-- header -->
+			
+            <div data-role="content" data-theme="c">
+
+                <h3>Dungeon</h3>
+                <p>Page is under construction.</p>
+
+            </div>
+            
+            <!--<div data-role="content" data-theme="b">
+
+                <p><a href="#addDungeon" id="addNewDungeon"><img style="margin:0px auto;display:block" src="images/dungeonCTA.svg" width="225px" height="225px"></a></p>
+
+                <h3>Browse Dungeons</h3>
+                
+                <ul data-role="listview" data-inset="true" data-ajax="false">
+                    <li><a href="#browse" id="browseButton" border="0" width="35" height="35" alt="Browse">Browse</a></li>
+                </ul>
+
+                <h3>Newest Dungeons</h3>
+                <div id="newsStream">
+                    <ul data-role="listview" data-inset="true">
+                        <li>
+                            <a href="#news" rel="external" data-ajax="false">
+                                <h3>New Rifle!</h3>
+                                <p>Now introducing the Berret 50 Cal!  This gun can shoot a target accurately at a distance of 1 mile, that is if you have the skill.</p><p class="ui-li-aside"><strong>3/12/2012</strong></p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#news" rel="external" data-ajax="false">
+                                <h3>New Shotgun!</h3>
+                                <p>The Enforcer shotgun was just released today.  It is a twelve gage with a built in silencer. It is meant to be used by the military for Stealth Operations.</p><p class="ui-li-aside"><strong>3/11/2012</strong></p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#news" rel="external" data-ajax="false">
+                                <h3>New Sword!</h3>
+                                <p>The Lightblade is a new kind of sword just created.  It is similar in shape and use to a normal sword but its blade has a high powered laser running along its edge allowing it to cut through the strongest of materials.</p><p class="ui-li-aside"><strong>3/8/2012</strong></p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#news" rel="external" data-ajax="false">
+                                <h3>New Weapon!</h3>
+                                <p>This new weapon is unlike any other item designed for battle.  It is called the Sickle-Shot.  This weapon is similar to a gun except instead of shooting bullets it shoots razor sharp crescent-shaped disks.</p>
+                                <p class="ui-li-aside"><strong>3/5/2012</strong></p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <a href="#news">View All News</a>
+           </div>--><!--Commented out until I decide completely what to do for the Dungeon page-->
+            
+            <div data-role="footer" data-position="fixed">
+
+                <div data-role="navbar" data-icon-pos="top">
+                    <ul>
+                    	<li><a href="#browse" rel="external" data-ajax="false" data-inline="true" data-icon="search" data-add-back-btn="true">Browse</a></li>
+                    	<li><a href="#dungeonHome" rel="external" data-ajax="false" data-inline="true" data-icon="grid" data-add-back-btn="true">Dungeon</a></li>
+                        <li><a href="#characterHome" rel="external" data-ajax="false" data-inline="true" data-icon="grid" data-add-back-btn="true">Character</a></li>
+                        <li><a href="#links" rel="internal" data-ajax="true" data-inline="true" data-icon="info" data-add-back-btn="true">Links</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    <!--****************************************Character Home Page**************************************************-->
+        <div data-role="page" id="characterHome" data-add-back-btn="true" data-theme="c">
+
+            <div data-role="header" data-position="fixed">
+
+                <p><a href="#home"><img style="margin:0 auto;display:block" src="images/branding.png" width="105px" height="40px"></a></p>
+                
+            </div><!-- header -->
+
+            <div data-role="content" data-theme="c">
+
+                <a href="#addCharacter" id="addNewCharacter"><img style="margin:0 auto;display:block" src="images/characterCTA.png" width="225px" height="225px"></a>
+
+                <h3>View Characters</h3>
+
+                <ul data-role="listview" data-inset="true" data-ajax="false">
+                    <li><a href="#characterView" id="displayData">View Characters</a></li>
+                </ul>
+                
+                <h3>View Characters From XHR</h3>
+
+                <ul data-role="listview" data-inset="true" data-ajax="false">
+                    <li><a href="#xhrCharacterView" id="displayXHR">View XHR Characters</a></li>
+                </ul>
+
+                <h3>Browse Characters(CouchApp)</h3>
+
+                <ul data-role="listview" data-inset="true" data-ajax="false">
+                    <li><a href="#characterBrowse" id="browseButton">Browse</a></li>
+                </ul>
+
+                <h3>Newest Characters</h3>
+                <div id="characterNewsStream">
+                    <ul data-role="listview" data-inset="true">
+                        <li>
+                            <a href="#characterNews" rel="external" data-ajax="false">
+                                <h3>New Striker!</h3>
+                                <p></p><p class="ui-li-aside"><strong>3/12/2012</strong></p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#characterNews" rel="external" data-ajax="false">
+                                <h3>New Defender!</h3>
+                                <p></p><p class="ui-li-aside"><strong>3/11/2012</strong></p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#characterNews" rel="external" data-ajax="false">
+                                <h3>New Controller!</h3>
+                                <p></p><p class="ui-li-aside"><strong>3/8/2012</strong></p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#characterNews" rel="external" data-ajax="false">
+                                <h3>New Leader!</h3>
+                                <p></p>
+                                <p class="ui-li-aside"><strong>3/5/2012</strong></p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <a href="#news">View All News</a>
+           </div>
+            
+            <div data-role="footer" data-position="fixed">
+
+                <div data-role="navbar" data-icon-pos="top">
+                    <ul>
+                    	<li><a href="#browse" rel="external" data-ajax="false" data-inline="true" data-icon="search" data-add-back-btn="true">Browse</a></li>
+                    	<li><a href="#dungeonHome" rel="external" data-ajax="false" data-inline="true" data-icon="grid" data-add-back-btn="true">Dungeon</a></li>
+                        <li><a href="#characterHome" rel="external" data-ajax="false" data-inline="true" data-icon="grid" data-add-back-btn="true">Character</a></li>
+                        <li><a href="#links" rel="internal" data-ajax="true" data-inline="true" data-icon="info" data-add-back-btn="true">Links</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    <!--***************************************Character Form Page**********************************************************-->
+        <div data-role="page" id="addCharacter" data-add-back-btn="true" data-theme="c">
+
+            <div data-role="header" data-position="fixed">
+
+                <p><a href="#home"><img style="margin:0 auto;display:block" src="images/branding.png" width="105px" height="40px"></a></p>
+                
+            </div><!-- header -->
+
+            <div data-role="content" data-theme="c">
+
+                <h3>Create A New Character</h3>
+
+                <a href ="#characterView" id="showCharacters">Show Characters</a>
+                <a href ="#" id="clearData">Delete Characters</a>
+                <a href="#addCharacter" id="addNew" style="display: none;" >Create A New Character</a>
+                <br>
+                <p></p>
+
+				<p>Please navigate and fill out the form by using the drop-down sections.</p>
+                <p>All fields with a * by them are required.</p>
+
+                <form action="" method="post" id="createCharacterForm">
+					
+                <div data-role="collapsible-set">                        
+                    <div data-role="collapsible" data-collapsed="true" id="basicInfoCollapsible" data-inset="true" data-theme="a" data-content-theme="a">
+                    	<h3>Basic Information</h3>
+                        
+                        <div id="levelSlider">
+                            <label for="level">*Level:</label>
+                            <input type="range" name="level" id="level" value="" min="1" max="30" class="required"/>
+                        </div>
+                        
+                        <div id="roleDrop" data-role="field-contain" data-prevent-focus-zoom="true">
+                            <label for="role">*Role:</label>
+                            <select name="role" id="role" data-native-menu="false" class="required" >
+                                <option data-placeholder="true" value>Please select one.</option>
+                                <option value="Striker">Striker</option>
+                                <option value="Defender">Defender</option>
+                                <option value="Controller">Controller</option>
+                                <option value="Leader">Leader</option>
+                            </select>
+                    	</div>
+                        
+                        <p>Please choose character class based off of chosen role.</p>
+                        
+                        <div id="classDrop" data-prevent-focus-zoom="true">
+                        	<label for="characterClass">*Class:</label>
+                            <select name="characterClass" id="characterClass" data-native-menu="false" class="required" >
+								<option data-placeholder="true" value>Please select one.</option>
+                                <optgroup label="Striker Classes">
+                                    <option value="Sorceror">Sorceror</option>
+                                    <option value="SorcerorElementalist">Sorceror(Elementalist)</option>
+                                    <option value="Hybrid Sorceror">Hybrid Sorceror</option>
+                                    <option value="Warlock">Warlock</option>
+                                    <option value="Warlock Hexblade">Warlock(Hexblade)</option>
+                                    <option value="Hybrid Warlock">Hybrid Warlock</option>
+                                    <option value="Avenger">Avenger</option>
+                                    <option value="Hybrid Avenger">Hybrid Avenger</option>
+                                    <option value="Paladin Blackguard">Paladin(Blackguard)</option>
+                                    <option value="Hybrid Palading Blackguard">Hybrid Paladin(Blackguard)</option>
+                                    <option value="Assassin Executioner">Assassin(Executioner)</option>
+                                    <option value="Hybrid Assassin Executioner">Hybrid Assassin(Executioner)</option>
+                                    <option value="Fighter Slayer">Fighter(Slayer)</option>
+                                    <option value="Rogue Scoundrel">Rogue(Scoundrel)</option>
+                                    <option value="Rogue Thief">Rogue(Scoundrel)</option>
+                                    <option value="Hybrid Rogue">Hybrid Rogue</option>
+                                    <option value="Ranger">Ranger</option>
+                                    <option value="Ranger Scout">Ranger(Scout)</option>
+                                    <option value="Hybrid Ranger">Hybrid Ranger</option>
+                                    <option value="Barbarian">Barbarian</option>
+                                    <option value="Hybrid Barbarian">Hybrid Barbarian</option>
+                                    <option value="Monk">Monk</option>
+                                    <option value="Hybrid Monk">Hybrid Monk</option>
+                                    <option value="Assassin">Assassin</option>
+                                    <option value="Hybrid Assassin">Hybrid Assassin</option>
+                                    <option value="Vampire">Vampire</option>
+                                    <option value="Hybrid Vampire">Hybrid Vampire</option>
+                                </optgroup>
+                                <optgroup label="Defender Classes">
+                                    <option value="Swordmage">Swordmage</option>
+                                    <option value="Hybrid Swordmage">Hybrid Swordmage</option>
+                                    <option value="Paladin">Paladin</option>
+                                    <option value="Paladin Cavalier">Paladin(Cavalier)</option>
+                                    <option value="Hybrid Paladin">Hybrid Paladin</option>
+                                    <option value="Hybrid Paladin Cavalier">Hybrid Paladin(Cavalier)</option>
+                                    <option value="Fighter Knight">Fighter(Knight)</option>
+                                    <option value="Fighter Weaponmaster">Fighter(Weaponmaster)</option>
+                                    <option value="Hybrid Fighter">Hybrid Fighter</option>
+                                    <option value="Warden">Warden</option>
+                                    <option value="Hybrid Warden">Hybrid Warden</option>
+                                    <option value="Battlemind">Battlemind</option>
+                                    <option value="Hybrid Battlemind">Hybrid Battlemind</option>
+                                </optgroup>
+                                <optgroup label="Controller Classes">
+                                    <option value="Warlock Binder">Warlock(Binder)</option>
+                                    <option value="Hybrid Warlock Binder">Hybrid Warlock(Binder)</option>
+                                    <option value="Wizard Arcanist">Wizard(Arcanist)</option>
+                                    <option value="Wizard Bladesinger">Wizard(Bladesinger)</option>
+                                    <option value="Wizard Mage">Wizard(Mage)</option>
+                                    <option value="Wizard Sha'ir">Wizard(Sha'ir)</option>
+                                    <option value="Wizard Witch">Wizard(Witch)</option>
+                                    <option value="Hybrid Wizard">Hybrid Wizard</option>
+                                    <option value="Invoker">Invoker</option>
+                                    <option value="Hybrid Invoker">Hybrid Invoker</option>
+                                    <option value="Ranger Hunter">Ranger(Hunter)</option>
+                                    <option value="Druid">Druid</option>
+                                    <option value="Druid Protector">Druid(Protector)</option>
+                                    <option value="Hybrid Druid">Hybrid Druid</option>
+                                    <option value="Seeker">Seeker</option>
+                                    <option value="Hybrid Seeker">Hybrid Seeker</option>
+                                    <option value="Psion">Psion</option>
+                                    <option value="Hybrid Psion">Hybrid Psion</option>
+                                </optgroup>
+                                <optgroup label="Leader Classes">
+                                    <option value="Artificer">Artificer</option>
+                                    <option value="Hybrid Artificer">Hybrid Artificer</option>
+                                    <option value="Bard">Bard</option>
+                                    <option value="Bard Skald">Bard(Skald)</option>
+                                    <option value="Hybrid Bard">Hybrid Bard</option>
+                                    <option value="Cleric Templar">Cleric(Templar)</option>
+                                    <option value="Cleric Warpriest">Cleric(Warpriest)</option>
+                                    <option value="Hybrid Cleric">Hybrid Cleric</option>
+                                    <option value="Runepriest">Runepriest</option>
+                                    <option value="Hybrid Runepriest">Hybrid Runepriest</option>
+                                    <option value="Warlord Marshal">Warlord(Marshal)</option>
+                                    <option value="Hybrid Warlord">Hybrid Warlord</option>
+                                    <option value="Druid Sentinel">Druid(Sentinel)</option>
+                                    <option value="Hybrid Druid Sentinel">Hybrid Druid(Sentinel)</option>
+                                    <option value="Shaman">Shaman</option>
+                                    <option value="Hybrid Shaman">Hybrid Shaman</option>
+                                    <option value="Ardent">Ardent</option>
+                                    <option value="Hybrid Ardent">Hybrid Ardent</option>
+                                </optgroup>
+							</select>
+                        </div><!--Temporary All-Class Dropdown--> 
+                        
+                        <!--<div id="strikerDrop" data-role="fieldcontain">
+                            <label for="strikerClasses">*Striker Classes:</label>
+                            <select name="strikerClasses" id="strikerClasses" data-native-menu="false">
+                                <option data-placeholder="true" value>Please select one.</option>
+                                <optgroup label="Arcane">
+                                    <option value="Sorceror">Sorceror</option>
+                                    <option value="SorcerorElementalist">Sorceror(Elementalist)</option>
+                                    <option value="Hybrid Sorceror">Hybrid Sorceror</option>
+                                    <option value="Warlock">Warlock</option>
+                                    <option value="Warlock Hexblade">Warlock(Hexblade)</option>
+                                    <option value="Hybrid Warlock">Hybrid Warlock</option>
+                                </optgroup>
+                                <optgroup label="Divine">
+                                    <option value="Avenger">Avenger</option>
+                                    <option value="Hybrid Avenger">Hybrid Avenger</option>
+                                    <option value="Paladin Blackguard">Paladin(Blackguard)</option>
+                                    <option value="Hybrid Palading Blackguard">Hybrid Paladin(Blackguard)</option>
+                                </optgroup>
+                                <optgroup label="Martial">
+                                    <option value="Assassin Executioner">Assassin(Executioner)</option>
+                                    <option value="Hybrid Assassin Executioner">Hybrid Assassin(Executioner)</option>
+                                    <option value="Fighter Slayer">Fighter(Slayer)</option>
+                                    <option value="Rogue Scoundrel">Rogue(Scoundrel)</option>
+                                    <option value="Rogue Thief">Rogue(Scoundrel)</option>
+                                    <option value="Hybrid Rogue">Hybrid Rogue</option>
+                                    <option value="Ranger">Ranger</option>
+                                    <option value="Ranger Scout">Ranger(Scout)</option>
+                                    <option value="Hybrid Ranger">Hybrid Ranger</option>
+                                </optgroup>
+                                <optgroup label="Primal">
+                                    <option value="Barbarian">Barbarian</option>
+                                    <option value="Hybrid Barbarian">Hybrid Barbarian</option>
+                                </optgroup>
+                                <optgroup label="Psionic">
+                                    <option value="Monk">Monk</option>
+                                    <option value="Hybrid Monk">Hybrid Monk</option>
+                                </optgroup>
+                                <optgroup label="Shadow">
+                                    <option value="Assassin">Assassin</option>
+                                    <option value="Hybrid Assassin">Hybrid Assassin</option>
+                                    <option value="Vampire">Vampire</option>
+                                    <option value="Hybrid Vampire">Hybrid Vampire</option>
+                                </optgroup>
+                            </select>
+                    	</div>--><!--Striker Dropdown-->
+                        
+                        <!--<div id="defenderDrop" data-role="fieldcontain">
+                            <label for="defenderClasses">*Defender Classes:</label>
+                            <select name="defenderClasses" id="defenderClasses" data-native-menu="false">
+                                <option data-placeholder="true" value>Please select one.</option>
+                                <optgroup label="Arcane">
+                                    <option value="Swordmage">Swordmage</option>
+                                    <option value="Hybrid Swordmage">Hybrid Swordmage</option>
+                                </optgroup>
+                                <optgroup label="Divine">
+                                    <option value="Paladin">Paladin</option>
+                                    <option value="Paladin Cavalier">Paladin(Cavalier)</option>
+                                    <option value="Hybrid Paladin">Hybrid Paladin</option>
+                                    <option value="Hybrid Paladin Cavalier">Hybrid Paladin(Cavalier)</option>
+                                </optgroup>
+                                <optgroup label="Martial">
+                                    <option value="Fighter Knight">Fighter(Knight)</option>
+                                    <option value="Fighter Weaponmaster">Fighter(Weaponmaster)</option>
+                                    <option value="Hybrid Fighter">Hybrid Fighter</option>
+                                </optgroup>
+                                <optgroup label="Primal">
+                                    <option value="Warden">Warden</option>
+                                    <option value="Hybrid Warden">Hybrid Warden</option>
+                                </optgroup>
+                                <optgroup label="Psionic">
+                                    <option value="Battlemind">Battlemind</option>
+                                    <option value="Hybrid Battlemind">Hybrid Battlemind</option>
+                                </optgroup>
+                            </select>
+                    	</div>--><!--Defender Dropdown-->
+                        
+                        <!--<div id="controllerDrop" data-role="fieldcontain">
+                            <label for="controllerClasses">*Controller Classes:</label>
+                            <select name="controllerClasses" id="controllerClasses" data-native-menu="false">
+                                <option data-placeholder="true" value>Please select one.</option>
+                                <optgroup label="Arcane">
+                                    <option value="Warlock Binder">Warlock(Binder)</option>
+                                    <option value="Hybrid Warlock Binder">Hybrid Warlock(Binder)</option>
+                                    <option value="Wizard Arcanist">Wizard(Arcanist)</option>
+                                    <option value="Wizard Bladesinger">Wizard(Bladesinger)</option>
+                                    <option value="Wizard Mage">Wizard(Mage)</option>
+                                    <option value="Wizard Sha'ir">Wizard(Sha'ir)</option>
+                                    <option value="Wizard Witch">Wizard(Witch)</option>
+                                    <option value="Hybrid Wizard">Hybrid Wizard</option>
+                                </optgroup>
+                                <optgroup label="Divine">
+                                    <option value="Invoker">Invoker</option>
+                                    <option value="Hybrid Invoker">Hybrid Invoker</option>
+                                </optgroup>
+                                <optgroup label="Martial">
+                                    <option value="Ranger Hunter">Ranger(Hunter)</option>
+                                </optgroup>
+                                <optgroup label="Primal">
+                                    <option value="Druid">Druid</option>
+                                    <option value="Druid Protector">Druid(Protector)</option>
+                                    <option value="Hybrid Druid">Hybrid Druid</option>
+                                    <option value="Seeker">Seeker</option>
+                                    <option value="Hybrid Seeker">Hybrid Seeker</option>
+                                </optgroup>
+                                <optgroup label="Psionic">
+                                    <option value="Psion">Psion</option>
+                                    <option value="Hybrid Psion">Hybrid Psion</option>
+                                </optgroup>
+                            </select>
+                    	</div>--><!--Controller Dropdown-->
+                        
+                        <!--<div id="leaderDrop" data-role="fieldcontain">
+                            <label for="leaderClasses">*Leader Classes:</label>
+                            <select name="leaderClasses" id="leaderClasses" data-native-menu="false">
+                                <option data-placeholder="true" value>Please select one.</option>
+                                <optgroup label="Arcane">
+                                    <option value="Artificer">Artificer</option>
+                                    <option value="Hybrid Artificer">Hybrid Artificer</option>
+                                    <option value="Bard">Bard</option>
+                                    <option value="Bard Skald">Bard(Skald)</option>
+                                    <option value="Hybrid Bard">Hybrid Bard</option>
+                                </optgroup>
+                                <optgroup label="Divine">
+                                    <option value="Cleric Templar">Cleric(Templar)</option>
+                                    <option value="Cleric Warpriest">Cleric(Warpriest)</option>
+                                    <option value="Hybrid Cleric">Hybrid Cleric</option>
+                                    <option value="Runepriest">Runepriest</option>
+                                    <option value="Hybrid Runepriest">Hybrid Runepriest</option>
+                                </optgroup>
+                                <optgroup label="Martial">
+                                    <option value="Warlord Marshal">Warlord(Marshal)</option>
+                                    <option value="Hybrid Warlord">Hybrid Warlord</option>
+                                </optgroup>
+                                <optgroup label="Primal">
+                                    <option value="Druid Sentinel">Druid(Sentinel)</option>
+                                    <option value="Hybrid Druid Sentinel">Hybrid Druid(Sentinel)</option>
+                                    <option value="Shaman">Shaman</option>
+                                    <option value="Hybrid Shaman">Hybrid Shaman</option>
+                                </optgroup>
+                                <optgroup label="Psionic">
+                                    <option value="Ardent">Ardent</option>
+                                    <option value="Hybrid Ardent">Hybrid Ardent</option>
+                                </optgroup>
+                            </select>
+                    	</div>--><!--Leader Dropdown-->
+                        
+                        <div id="raceDrop" data-role="field-contain" data-prevent-focus-zoom="true">
+                            <label for="race">*Race:</label>
+                            <select name="race" id="race" data-native-menu="false" class="required" >
+                                <option data-placeholder="true" value>Please select one.</option>
+                                <optgroup label="Player's Handbook 1">
+                                    <option value="Human">Human</option>
+                                    <option value="Half-Elf">Half-Elf</option>
+                                    <option value="Tiefling">Tiefling</option>
+                                    <option value="Dwarf">Dwarf</option>
+                                    <option value="Halfling">Halfling</option>
+                                    <option value="Elf">Elf</option>
+                                    <option value="Eladrin">Eladrin</option>
+                                    <option value="Dragonborn">Dragonborn</option>
+                                </optgroup>
+                                <optgroup label="Player's Handbook 2">
+                                    <option value="Razorclaw Shifter">Razorclaw Shifter</option>
+                                    <option value="Gnome">Gnome</option>
+                                    <option value="Deva">Deva</option>
+                                    <option value="Goliath">Goliath</option>
+                                    <option value="Half-Orc">Half-Orc</option>
+                                    <option value="Longtooth Shifter">Longtooth Shifter</option>
+                                </optgroup>
+                                <optgroup label="Player's Handbook 3">
+                                    <option value="Wilden">Wilden</option>
+                                    <option value="Githzerai">Githzerai</option>
+                                    <option value="Shardmind">Shardmind</option>
+                                    <option value="Minotaur">Minotaur</option>
+                                </optgroup>
+                                <optgroup label="Dark Sun Campaign Setting">
+                                    <option value="Mul">Mul</option>
+                                    <option value="Thri-Kreen">Thri-Kreen</option>
+                                </optgroup>
+                                <optgroup label="Eberron Player's Guide">
+                                    <option value="Warforged">Warforged</option>
+                                    <option value="Changeling">Changeling</option>
+                                    <option value="Kalashtar">Kalashtar</option>
+                                </optgroup>
+                                <optgroup label="Forgotten Realms">
+                                    <option value="Drow">Drow</option>
+                                    <option value="Genasi">Genasi</option>
+                                </optgroup>
+                                <optgroup label="Heroes of Shadow">
+                                    <option value="Shade">Shade</option>
+                                    <option value="Vryloka">Vryloka</option>
+                                    <option value="Revenant">Revenant</option>
+                                </optgroup>
+                                <optgroup label="Heroes of the Feywild">
+                                    <option value="Satyr">Satyr</option>
+                                    <option value="Pixie">Pixie</option>
+                                    <option value="Hamadryad">Hamadryad</option>
+                                </optgroup>
+                                <optgroup label="Manual of the Planes">
+                                    <option value="Bladeling">Bladeling</option>
+                                </optgroup>
+                                <optgroup label="Monster Manual 1">
+                                    <option value="Hobgoblin">Hobgoblin</option>
+                                    <option value="Kobold">Kobold</option>
+                                    <option value="Githyanki">Githyanki</option>
+                                    <option value="Goblin">Goblin</option>
+                                    <option value="Orc">Orc</option>
+                                    <option value="Bugbear">Bugbear</option>
+                                </optgroup>
+                                <optgroup label="Monster Manual 2">
+                                    <option value="Bullywug">Bullywug</option>
+                                    <option value="Duergar">Duergar</option>
+                                    <option value="Kenku">Kenku</option>
+                                </optgroup>
+                                <optgroup label="Neverwinter Campaign Setting">
+                                    <option value="Gold Dwarf">Gold Dwarf</option>
+                                    <option value="Moon Elf(Eladrin)">Moon Elf(Eladrin)</option>
+                                    <option value="Kenku">Kenku</option>
+                                    <option value="Shield Dwarf">Shield Dwarf</option>
+                                    <option value="Sun Elf(Eladrin)">Sun Elf(Eladrin)</option>
+                                    <option value="Wild Elf">Wild Elf</option>
+									<option value="Wood Elf">Wood Elf</option>
+                                </optgroup>
+                                <optgroup label="Dragon Magazine">
+									<option value="Gnoll">Gnoll</option>
+									<option value="Shadar-Kai">Shadar-Kai</option>
+									<option value="Hengeyokai">Hengeyokai</option>
+									<option value="Llewyrr Elf">Llewyrr Elf</option>
+                                </optgroup>
+                            </select>
+                        </div>      
+                    </div><!--Basic Informtion-->
+                    
+                    <div data-role="collapsible" data-collapsed="true" id="personalInfoCollapsible" data-inset="true" data-theme="a" data-content-theme="a">
+                    	<h3>Personal Information</h3>
+                        
+                        <div id="nameInput"  data-prevent-focus-zoom="true">
+                            <label for="characterName">*Character Name:</label>
+                            <input type="text" name="characterName" id="characterName" placeholder="Balthor." class="required"/>
+                        </div>
+                        
+                        <div id="genderRadio" data-role="fieldcontain">
+                            <fieldset data-role="controlgroup">
+                                <legend>*Gender?</legend>
+                                <input type="radio" value="Male" name="gender" id="male" />
+                                <label for="male">Male</label>
+                                <input type="radio" value="Female" name="gender" id="female" />
+                                <label for="female">Female</label>
+                                <input type="radio" value="Other" name="gender" id="other" />
+                                <label for="other">Other</label>
+                                <input type="radio" value="None" name="gender" id="none" />
+                                <label for="none">None</label>
+                            </fieldset>
+                        </div>
+                        
+                        <div id="heightInput" data-role="field-contain" data-prevent-focus-zoom="true">
+                            <label for="height">Height:</label>
+                            <input type="text" name="height" id="height" placeholder="6' 5&quot" />
+                        </div>
+                        
+                        <div id="weightInput"  data-prevent-focus-zoom="true">    
+                            <label for="weight">Weight:</label>
+                            <input type="text" name="weight" id="weight" placeholder="210 lbs" />
+                        </div>
+                        
+                        <div id="ageInput" data-role="field-contain" data-prevent-focus-zoom="true">        
+                            <label for="age">Age:</label>
+                            <input type="text" name="age" id="age" placeholder="35 years old." />
+                        </div>
+                        
+                        <div id="alignmentDrop" data-role="field-contain" data-prevent-focus-zoom="true">
+                            <label for="alignment">*Alignment:</label>
+                            <select name="alignment" id="alignment" data-native-menu="false" class="required" >
+                                <option data-placeholder="true" value>Please select one.</option>
+                                <optgroup label="Good">
+                                    <option value="Lawful Good">Lawful Good</option>
+                                    <option value="Good">Good</option>
+                                    <option value="Chatoic Good">Chatoic Good</option>
+                                </optgroup>
+                                <optgroup label="Neutral">
+                                    <option value="Lawful Neutral">Lawful Neutral</option>
+                                    <option value="Neutral">Neutral</option>
+                                    <option value="Chatoic Neutral">Chatoic Neutral</option>
+                                </optgroup>
+                                <optgroup label="Evil">
+                                    <option value="Lawful Evil">Lawful Evil</option>
+                                    <option value="Evil">Evil</option>
+                                    <option value="Chaotic Evil">Chaotic Evil</option>
+                                </optgroup>
+                            </select>
+                    	</div>
+                        
+                        <div id="deityDrop"  data-prevent-focus-zoom="true">
+                            <label for="deity">*Deity:</label>
+                            <select name="deity" id="deity" data-native-menu="false" class="required" >
+                                <option data-placeholder="true" value>Please select one.</option>
+                                <optgroup label="Lawful Good">
+                                    <option value="Amaunator">Amaunator</option>
+                                    <option value="Arvoreen">Arvoreen</option>
+                                    <option value="Bahamut">Bahamut</option>
+                                    <option value="Berronar Truesilver">Berronar Truesilver</option>
+                                    <option value="Chauntea">Chauntea</option>
+                                    <option value="Clangeddin Silverbeard">Clangeddin Silverbeard</option>
+                                    <option value="Dol Arah">Dol Arah</option>
+                                    <option value="Haramathur">Haramathur</option>
+                                    <option value="Moradin">Moradin</option>
+                                    <option value="Siamorphe">Siamorphe</option>
+                                    <option value="The Path of Light">The Path of Light</option>
+                                    <option value="The Red Knight">The Red Knight</option>
+                                    <option value="The Silver Flame">The Silver Flame</option>
+                                    <option value="Torm">Torm</option>
+                                </optgroup>
+                                <optgroup label="Good">
+                                    <option value="Angharradh">Angharradh</option>
+                                    <option value="Arawai">Arawai</option>
+                                    <option value="Avandra">Avandra</option>
+                                    <option value="Baervan Wildwanderer">Baervan Wildwanderer</option>
+                                    <option value="Baravar Cloakshadow">Baravar Cloakshadow</option>
+                                    <option value="Boldrei">Boldrei</option>
+                                    <option value="Corelion">Corelion</option>
+                                    <option value="Cyrrollalee">Cyrrollalee</option>
+                                    <option value="Deep Sashelas">Deep Sashelas</option>
+                                    <option value="Dugmaren Brightmantle">Dugmaren Brightmantle</option>
+                                    <option value="Garl Glittergold">Garl Glittergold</option>
+                                    <option value="Ilmater">Ilmater</option>
+                                    <option value="Labelas Enoreth">Labelas Enoreth</option>
+                                    <option value="Lliira">Lliira</option>
+                                    <option value="Marthammor Duin">Marthammor Duin</option>
+                                    <option value="Mielikki">Mielikki</option>
+                                    <option value="Milil">Milil</option>
+                                    <option value="Nusemnee">Nusemnee</option>
+                                    <option value="Olladra">Olladra</option>
+                                    <option value="Pelor">Pelor</option>
+                                    <option value="Selune">Selune</option>
+                                    <option value="Sharess">Sharess</option>
+                                    <option value="Sheela Peryroyl">Sheela Peryroyl</option>
+                                    <option value="Shiallia">Shiallia</option>
+                                    <option value="Solonor Thelandira">Solonor Thelandira</option>
+                                    <option value="Sune">Sune</option>
+                                    <option value="Thard Harr">Thard Harr</option>
+                                    <option value="The Sovereign Host">The Sovereign Host</option>
+                                    <option value="Tymora">Tymora</option>
+                                    <option value="Valkur">Valkur</option>
+                                </optgroup>
+                                <optgroup label="Unaligned">
+                                    <option value="Akadi">Akadi</option>
+                                    <option value="Aureon">Aureon</option>
+                                    <option value="Aurom">Aurom</option>
+                                    <option value="Balinor">Balinor</option>
+                                    <option value="Brandobaris">Brandobaris</option>
+                                    <option value="Callarduran Smoothhands">Callarduran Smoothhands</option>
+                                    <option value="Corellon">Corellon</option>
+                                    <option value="Dol Dorn">Dol Dorn</option>
+                                    <option value="Erathis">Erathis</option>
+                                    <option value="Erevan Llesere">Erevan Llesere</option>
+                                    <option value="Fenmarel Mestarine">Fenmarel Mestarine</option>
+                                    <option value="Gond">Gond</option>
+                                    <option value="Grumbar">Grumbar</option>
+                                    <option value="Loun">Loun</option>
+                                    <option value="Istishia">Istishia</option>
+                                    <option value="Jergai">Jergai</option>
+                                    <option value="Kelemvor">Kelemvor</option>
+                                    <option value="Kol Korran">Kol Korran</option>
+                                    <option value="Kord">Kord</option>
+                                    <option value="Kossuth">Kossuth</option>
+                                    <option value="Laeris">Laeris</option>
+                                    <option value="Melora">Melora</option>
+                                    <option value="Oghma">Oghma</option>
+                                    <option value="Onatar">Onatar</option>
+                                    <option value="Sagawehn">Sagawehn</option>
+                                    <option value="Sehanine">Sehanine</option>
+                                    <option value="Shevarash">Shevarash</option>
+                                    <option value="Silvanus">Silvanus</option>
+                                    <option value="Tempus">Tempus</option>
+                                    <option value="The Blood of Vol">The Blood of Vol</option>
+                                    <option value="The Raven Queen">The Raven Queen</option>
+                                    <option value="The Spirits of the Past">The Spirits of the Past</option>
+                                    <option value="The Traveler">The Traveler</option>
+                                    <option value="The Undying Court">The Undying Court</option>
+                                    <option value="Uthgar">Uthgar</option>
+                                    <option value="Vergadain">Vergadain</option>
+                                    <option value="Waukeen">Waukeen</option>
+                                </optgroup>
+                                <optgroup label="Evil">
+                                    <option value="Abbathor">Abbathor</option>
+                                    <option value="Asmodeus">Asmodeus</option>
+                                    <option value="Baalzebul">Baalzebul</option>
+                                    <option value="Bane">Bane</option>
+                                    <option value="Bel">Bel</option>
+                                    <option value="Belial">Belial</option>
+                                    <option value="Beshaba">Beshaba</option>
+                                    <option value="Dispater">Dispater</option>
+                                    <option value="Fzoul Chembryl">Fzoul Chembryl</option>
+                                    <option value="Glasya">Glasya</option>
+                                    <option value="Hoar">Hoar</option>
+                                    <option value="Hruggek">Hruggek</option>
+                                    <option value="Levistus">Levistus</option>
+                                    <option value="Loviatar">Loviatar</option>
+                                    <option value="Maglubiyet">Maglubiyet</option>
+                                    <option value="Malar">Malar</option>
+                                    <option value="Mammon">Mammon</option>
+                                    <option value="Mephistopheles">Mephistopheles</option>
+                                    <option value="Shar">Shar</option>
+                                    <option value="Sseth">Sseth</option>
+                                    <option value="The Dark Six">The Dark Six</option>
+                                    <option value="The Keeper">The Keeper</option>
+                                    <option value="The Mockery">The Mockery</option>
+                                    <option value="Tiamat">Tiamat</option>
+                                    <option value="Torog">Torog</option>
+                                    <option value="Vecna">Vecna</option>
+                                    <option value="Zehir">Zehir</option>
+                                </optgroup>
+                                <optgroup label="Chaotic Evil">
+                                    <option value="Auril">Auril</option>
+                                    <option value="Bahgtru">Bahgtru</option>
+                                    <option value="Bazim-Gorag">Bazim-Gorag</option>
+                                    <option value="Cults of the Dragon Below">Cults of the Dragon Below</option>
+                                    <option value="Cyric">Cyric</option>
+                                    <option value="Garagos">Garagos</option>
+                                    <option value="Ghaunadaur">Ghaunadaur</option>
+                                    <option value="Gruumsh">Gruumsh</option>
+                                    <option value="Lolth">Lolth</option>
+                                    <option value="Luthic">Luthic</option>
+                                    <option value="Obould">Obould</option>
+                                    <option value="Shargaas">Shargaas</option>
+                                    <option value="Talona">Talona</option>
+                                    <option value="Tharizdun">Tharizdun</option>
+                                    <option value="The Devourer">The Devourer</option>
+                                    <option value="The Fury">The Fury</option>
+                                    <option value="The Shadow">The Shadow</option>
+                                    <option value="Umberlee">Umberlee</option>
+                                    <option value="Vaprak">Vaprak</option>
+                                </optgroup>
+                            </select>
+                    	</div>
+                        
+                        <div id="mandaInput" data-role="field-contain" data-prevent-focus-zoom="true">        
+                            <label for="mannerismsAndAppearance">Mannerisms and Appearance:</label>
+                            <input type="text" name="mannerismsAndAppearance" id="mannerismsAndAppearance" placeholder="Quick to anger and ugly"/>
+                        </div>
+                            
+                        <div id="ptInput"  data-prevent-focus-zoom="true">    
+                            <label for="personalityTraits">Personality Traits:</label>
+                            <input type="text" name="personalityTraits" id="personalityTraits" placeholder="Crude and rude." />
+                        </div>
+		 	        </div><!--Personal Informtion-->
+                   
+                    <!--<div data-role="collapsible" data-collapsed="true" data-inset="true" data-theme="a" data-content-theme="a">
+						<h3>Character Abilities</h3>
+                        
+                    </div>--><!--Character's Abilities-->
+                    
+                    <!--<div data-role="collapsible" data-collapsed="true" data-inset="true" data-theme="a" data-content-theme="a">
+                    	<h3>Character Skills</h3>
+                        
+                    </div>--><!--Character's Skills-->
+                    
+                    <!--<div data-role="collapsible" data-collapsed="true" data-inset="true" data-theme="a" data-content-theme="a">
+                    	<h3>Character Equipment</h3>
+                        
+                    </div>--><!--Character's Equipment-->
+				</div>
+
+                        <input type="submit" id="saveData" value="Create Character" data-theme="d" />
+                        <input type="reset" id="clearForm" value="Reset Form" />
+
+                </form>
+
+            </div>
+
+            <div data-role="footer" data-position="fixed">
+
+                <div data-role="navbar" data-icon-pos="top">
+                    <ul>
+                    	<li><a href="#browse" rel="external" data-ajax="false" data-inline="true" data-icon="search" data-add-back-btn="true">Browse</a></li>
+                    	<li><a href="#dungeonHome" rel="external" data-ajax="false" data-inline="true" data-icon="grid" data-add-back-btn="true">Dungeon</a></li>
+                        <li><a href="#characterHome" rel="external" data-ajax="false" data-inline="true" data-icon="grid" data-add-back-btn="true">Character</a></li>
+                        <li><a href="#links" rel="internal" data-ajax="true" data-inline="true" data-icon="info" data-add-back-btn="true">Links</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+     <!--***********************************Character List Page+*********************************************************-->
+     <div data-role="page" id="characterView" data-add-back-btn="true" data-theme="c">
+
+         <div data-role="header" data-position="fixed">
+
+             <p><a href="#home"><img style="margin:0 auto;display:block" src="images/branding.png" width="105px" height="40px"></a></p>
+
+         </div><!-- header -->
+
+
+
+         <div data-role="footer" data-position="fixed">
+
+             <div data-role="navbar" data-icon-pos="top">
+                 <ul>
+                     <li><a href="#browse" rel="external" data-ajax="false" data-inline="true" data-icon="search" data-add-back-btn="true">Browse</a></li>
+                     <li><a href="#dungeonHome" rel="external" data-ajax="false" data-inline="true" data-icon="grid" data-add-back-btn="true">Dungeon</a></li>
+                     <li><a href="#characterHome" rel="external" data-ajax="false" data-inline="true" data-icon="grid" data-add-back-btn="true">Character</a></li>
+                     <li><a href="#links" rel="internal" data-ajax="true" data-inline="true" data-icon="info" data-add-back-btn="true">Links</a></li>
+                 </ul>
+             </div>
+         </div>
+
+     </div>
+
+     <!--***********************************XHR Character List Page+*********************************************************-->
+     <div data-role="page" id="xhrCharacterView" data-add-back-btn="true" data-theme="c">
+
+         <div data-role="header" data-position="fixed">
+
+             <p><a href="#home"><img style="margin:0 auto;display:block" src="images/branding.png" width="105px" height="40px"></a></p>
+
+         </div><!-- header -->
+
+         <div data-role="content">
+            <ul id="xhrCharList" data-role="listview">
+                <li id="jsonChar" data-role="list-divider">JSON Characters</li>
+                <li id="emptyableLi">
+                    <p>Level: 30<br>
+                       Role: Striker<br>
+                       Class: Sorceror<br>
+                       Race: Halfling<br>
+                       Character Name: Baltha<br>
+                       Gender: Female<br>
+                       Height: 4 feet & 6 inches<br>
+                       Weight: 100 pounds<br>
+                       Age: 62<br>
+                       Alignment: Neutral<br>
+                       Deity: Corellon<br>
+                       Mannerism and Appearance: Sly and mysterious.<br>
+                       Personality Traits: Mischeivous but kind</p>
+                </li>
+                <li id="xmlChar" data-role="list-divider">XML Characters</li>
+                <li id="csvChar" data-role="list-divider">YML Characters</li>
+            </ul>    
+         </div>
+
+         <div data-role="footer" data-position="fixed">
+
+             <div data-role="navbar" data-icon-pos="top">
+                 <ul>
+                     <li><a href="#browse" rel="external" data-ajax="false" data-inline="true" data-icon="search" data-add-back-btn="true">Browse</a></li>
+                     <li><a href="#dungeonHome" rel="external" data-ajax="false" data-inline="true" data-icon="grid" data-add-back-btn="true">Dungeon</a></li>
+                     <li><a href="#characterHome" rel="external" data-ajax="false" data-inline="true" data-icon="grid" data-add-back-btn="true">Character</a></li>
+                     <li><a href="#links" rel="internal" data-ajax="true" data-inline="true" data-icon="info" data-add-back-btn="true">Links</a></li>
+                 </ul>
+             </div>
+         </div>
+
+     </div>
+
+    <!--***********************************Main Browse Page+*********************************************************-->
+		<div data-role="page" id="browse" data-add-back-btn="true" data-theme="c">
+
+            <div data-role="header" data-position="fixed">
+
+                <p><a href="#home"><img style="margin:0px auto;display:block" src="images/branding.png" width="105px" height="40px"></a></p>
+
+            </div><!-- header -->
+            
+            <div data-role="content" data-theme="c">
+            
+                <h3>Browse</h3>
+                
+                <p>Choose the section you want to browse.</p>
+                
+                <div align="center" data-role="controlgroup" data-type="horizontal">
+                        <a href=#dungeonBrowse rel="external" data-ajax="false" data-role="button" data-inline="true">Dungeon</a>
+                        <a href=#characterBrowse rel="external" data-ajax="false" data-role="button" data-inline="true">Character</a>
+                </div>
+            
+            </div><!--Content-->
+
+            <div data-role="footer" data-position="fixed">
+
+                <div data-role="navbar" data-icon-pos="top">
+                    <ul>
+                        <li><a href="#browse" rel="external" data-ajax="false" data-inline="true" data-icon="search" data-add-back-btn="true">Browse</a></li>
+                        <li><a href="#dungeonHome" rel="external" data-ajax="false" data-inline="true" data-icon="grid" data-add-back-btn="true">Dungeon</a></li>
+                        <li><a href="#characterHome" rel="external" data-ajax="false" data-inline="true" data-icon="grid" data-add-back-btn="true">Character</a></li>
+                        <li><a href="#links" rel="internal" data-ajax="true" data-inline="true" data-icon="info" data-add-back-btn="true">Links</a></li>
+                    </ul>
+                </div>
+            </div>
+        
+		</div>
+    
+    <!--*****************************Character Browse Page**********************************************************-->
+        <div data-role="page" id="characterBrowse" data-add-back-btn="true" data-theme="c">
+
+            <div data-role="header" data-position="fixed">
+
+                <p><a href="#home"><img style="margin:0px auto;display:block" src="images/branding.png" width="105px" height="40px"></a></p>
+
+            </div><!-- header -->
+
+            <div data-role="content" data-theme="c">
+
+
+                <h3>Browse Characters</h3>
+                
+                <ul data-role="listview" data-inset="true" data-filter="true" data-ajax="false">
+                        <li><a href="#browseStrikers" id="browseStrikers">Browse Striker Classes</a></li>
+                        <li><a href="#browseDefenders" id="browseDefenders">Browse Defender Classes</a></li>
+                        <li><a href="#browseControllers" id="browseControllers">Browse Controller Classes</a></li>
+                        <li><a href="#browseLeaders" id="browseLeaders">Browse Leader Classes</a></li>
+                </ul>
+
+            </div>
+
+            <div data-role="footer" data-position="fixed">
+
+                <div data-role="navbar" data-icon-pos="top">
+                    <ul>
+                        <li><a href="#browse" rel="external" data-ajax="false" data-inline="true" data-icon="search" data-add-back-btn="true">Browse</a></li>
+                        <li><a href="#dungeonHome" rel="external" data-ajax="false" data-inline="true" data-icon="grid" data-add-back-btn="true">Dungeon</a></li>
+                        <li><a href="#characterHome" rel="external" data-ajax="false" data-inline="true" data-icon="grid" data-add-back-btn="true">Character</a></li>
+                        <li><a href="#links" rel="internal" data-ajax="true" data-inline="true" data-icon="info" data-add-back-btn="true">Links</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+     <!--*******************************Dungeon Browse Page+**********************************************************-->
+        <div data-role="page" id="dungeonBrowse" data-add-back-btn="true" data-theme="c">
+
+            <div data-role="header" data-position="fixed">
+
+                <p><a href="#home"><img style="margin:0 auto;display:block" src="images/branding.png" width="105px" height="40px"></a></p>
+
+            </div><!-- header -->
+
+            <div data-role="content" data-theme="c">
+
+                <h3>Requested Dungeons</h3>
+                <p>Page is under construction.</p>
+
+            </div>
+
+            <div data-role="footer" data-position="fixed">
+                <div data-role="navbar" data-icon-pos="top">
+                    <ul>
+                        <li><a href="#browse" rel="external" data-ajax="false" data-inline="true" data-icon="search" data-add-back-btn="true">Browse</a></li>
+                        <li><a href="#dungeonHome" rel="external" data-ajax="false" data-inline="true" data-icon="grid" data-add-back-btn="true">Dungeon</a></li>
+                        <li><a href="#characterHome" rel="external" data-ajax="false" data-inline="true" data-icon="grid" data-add-back-btn="true">Character</a></li>
+                        <li><a href="#links" rel="internal" data-ajax="true" data-inline="true" data-icon="info" data-add-back-btn="true">Links</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+    <!--*******************************Striker Browse Page+**********************************************************-->
+        <div data-role="page" id="browseStrikers" data-add-back-btn="true" data-theme="c">
+
+            <div data-role="header" data-position="fixed">
+
+                <p><a href="#home"><img style="margin:0 auto;display:block" src="images/branding.png" width="105px" height="40px"></a></p>
+
+            </div><!-- header -->
+
+            <div data-role="content" data-theme="c">
+
+                <h3>Striker Characters</h3>
+                <ul></ul>
+
+            </div>
+
+            <div data-role="footer" data-position="fixed">
+                <div data-role="navbar" data-icon-pos="top">
+                    <ul>
+                        <li><a href="#browse" rel="external" data-ajax="false" data-inline="true" data-icon="search" data-add-back-btn="true">Browse</a></li>
+                    	<li><a href="#dungeonHome" rel="external" data-ajax="false" data-inline="true" data-icon="grid" data-add-back-btn="true">Dungeon</a></li>
+                        <li><a href="#characterHome" rel="external" data-ajax="false" data-inline="true" data-icon="grid" data-add-back-btn="true">Character</a></li>
+                        <li><a href="#links" rel="internal" data-ajax="true" data-inline="true" data-icon="info" data-add-back-btn="true">Links</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+<!--*******************************Defender Browse Page+**********************************************************-->
+        <div data-role="page" id="browseDefenders" data-add-back-btn="true" data-theme="c">
+
+            <div data-role="header" data-position="fixed">
+
+                <p><a href="#home"><img style="margin:0 auto;display:block" src="images/branding.png" width="105px" height="40px"></a></p>
+
+            </div><!-- header -->
+
+            <div data-role="content" data-theme="c">
+
+                <h3>Defender Characters</h3>
+                <ul></ul>
+
+            </div>
+
+            <div data-role="footer" data-position="fixed">
+                <div data-role="navbar" data-icon-pos="top">
+                    <ul>
+                        <li><a href="#browse" rel="external" data-ajax="false" data-inline="true" data-icon="search" data-add-back-btn="true">Browse</a></li>
+                    	<li><a href="#dungeonHome" rel="external" data-ajax="false" data-inline="true" data-icon="grid" data-add-back-btn="true">Dungeon</a></li>
+                        <li><a href="#characterHome" rel="external" data-ajax="false" data-inline="true" data-icon="grid" data-add-back-btn="true">Character</a></li>
+                        <li><a href="#links" rel="internal" data-ajax="true" data-inline="true" data-icon="info" data-add-back-btn="true">Links</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    <!--*******************************Controller Browse Page+**********************************************************-->
+        <div data-role="page" id="browseControllers" data-add-back-btn="true" data-theme="c">
+
+            <div data-role="header" data-position="fixed">
+
+                <p><a href="#home"><img style="margin:0 auto;display:block" src="images/branding.png" width="105px" height="40px"></a></p>
+
+            </div><!-- header -->
+
+            <div data-role="content" data-theme="c">
+
+                <h3>Controller Characters</h3>
+                <ul></ul>
+
+            </div>
+
+            <div data-role="footer" data-position="fixed">
+                <div data-role="navbar" data-icon-pos="top">
+                    <ul>
+                        <li><a href="#browse" rel="external" data-ajax="false" data-inline="true" data-icon="search" data-add-back-btn="true">Browse</a></li>
+                    	<li><a href="#dungeonHome" rel="external" data-ajax="false" data-inline="true" data-icon="grid" data-add-back-btn="true">Dungeon</a></li>
+                        <li><a href="#characterHome" rel="external" data-ajax="false" data-inline="true" data-icon="grid" data-add-back-btn="true">Character</a></li>
+                        <li><a href="#links" rel="internal" data-ajax="true" data-inline="true" data-icon="info" data-add-back-btn="true">Links</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+<!--*******************************Leader Browse Page+**********************************************************-->
+        <div data-role="page" id="browseLeaders" data-add-back-btn="true" data-theme="c">
+
+            <div data-role="header" data-position="fixed">
+
+                <p><a href="#home"><img style="margin:0 auto;display:block" src="images/branding.png" width="105px" height="40px"></a></p>
+
+            </div><!-- header -->
+
+            <div data-role="content" data-theme="c">
+
+                <h3>Leader Characters</h3>
+                <ul></ul>
+
+            </div>
+
+            <div data-role="footer" data-position="fixed">
+                <div data-role="navbar" data-icon-pos="top">
+                    <ul>
+                        <li><a href="#browse" rel="external" data-ajax="false" data-inline="true" data-icon="search" data-add-back-btn="true">Browse</a></li>
+                    	<li><a href="#dungeonHome" rel="external" data-ajax="false" data-inline="true" data-icon="grid" data-add-back-btn="true">Dungeon</a></li>
+                        <li><a href="#characterHome" rel="external" data-ajax="false" data-inline="true" data-icon="grid" data-add-back-btn="true">Character</a></li>
+                        <li><a href="#links" rel="internal" data-ajax="true" data-inline="true" data-icon="info" data-add-back-btn="true">Links</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    <!--**********************************Links Page*****************************************************************-->
+        <div data-role="page" id="links" data-add-back-btn="true" data-theme="c">
+
+            <div data-role="header" data-position="fixed">
+
+                <p><a href="#home"><img style="margin:0 auto;display:block" src="images/branding.png" width="105px" height="40px"></a></p>
+                
+            </div><!-- header -->
+
+            <div align="center" data-role="content" data-theme="c">
+
+                <p>
+                    <a href="https://github.com/NathanBFS/MDV-Projects/tree/master/ASD/Buth_Nathan_Project1" rel="external" data-ajax="false" data-role="button" data-mini="true" data-icon="star" data-inline="true">App A Code</a><br/>
+                    <a href="http://NathanBFS.github.com/MDV-Projects/ASD/Buth_Nathan_Project1/index.html" data-ajax="false" data-role="button" data-mini="true" data-icon="star" data-inline="true">App A Live</a><br/>
+                </p>
+
+            </div>
+
+            <div data-role="footer" data-position="fixed">
+
+                <div data-role="navbar" data-icon-pos="top">
+                    <ul>
+                    	<li><a href="#browse" rel="external" data-ajax="false" data-inline="true" data-icon="search" data-add-back-btn="true">Browse</a></li>
+                    	<li><a href="#dungeonHome" rel="external" data-ajax="false" data-inline="true" data-icon="grid" data-add-back-btn="true">Dungeon</a></li>
+                        <li><a href="#characterHome" rel="external" data-ajax="false" data-inline="true" data-icon="grid" data-add-back-btn="true">Character</a></li>
+                        <li><a href="#links" rel="internal" data-ajax="true" data-inline="true" data-icon="info" data-add-back-btn="true">Links</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+    <!--***********************************News Browse Page*********************************************************-->
+        <div data-role="page" id="news" data-add-back-btn="true" data-theme="c">
+
+            <div data-role="header" data-position="fixed">
+
+                <p><a href="#home"><img style="margin:0 auto;display:block" src="images/branding.png" width="105px" height="40px"></a></p>
+                
+            </div><!-- header -->
+
+
+            <div data-role="content" data-theme="c">
+
+                <h3>News Stream</h3>
+                <div align="center" data-role="controlgroup" data-type="horizontal">
+                    <a href=#dungeonNews rel="external" data-ajax="false" data-role="button" data-inline="true">Dungeon</a>
+                    <a href=#characterNews rel="external" data-ajax="false" data-role="button" data-inline="true">Character</a>
+            	</div>
+                <p>Page is under construction.</p>
+
+            </div>
+
+            <div data-role="footer" data-position="fixed">
+
+                <div data-role="navbar" data-icon-pos="top">
+                    <ul>
+                    	<li><a href="#browse" rel="external" data-ajax="false" data-inline="true" data-icon="search" data-add-back-btn="true">Browse</a></li>
+                    	<li><a href="#dungeonHome" rel="external" data-ajax="false" data-inline="true" data-icon="grid" data-add-back-btn="true">Dungeon</a></li>
+                        <li><a href="#characterHome" rel="external" data-ajax="false" data-inline="true" data-icon="grid" data-add-back-btn="true">Character</a></li>
+                        <li><a href="#links" rel="internal" data-ajax="true" data-inline="true" data-icon="info" data-add-back-btn="true">Links</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+	<!--**********************************Dungeon News*************************************************-->
+    	<div data-role="page" id="dungeonNews" data-add-back-btn="true" data-theme="c">
+
+            <div data-role="header" data-position="fixed">
+
+                <p><a href="#home"><img style="margin:0 auto;display:block" src="images/branding.png" width="105px" height="40px"></a></p>
+                
+            </div><!-- header -->
+
+
+            <div data-role="content" data-theme="c">
+
+                <h3>Dungeon News Stream</h3>
+                <p>Page is under construction.</p>
+
+            </div>
+
+            <div data-role="footer" data-position="fixed">
+
+                <div data-role="navbar" data-icon-pos="top">
+                    <ul>
+                    	<li><a href="#browse" rel="external" data-ajax="false" data-inline="true" data-icon="search" data-add-back-btn="true">Browse</a></li>
+                    	<li><a href="#dungeonHome" rel="external" data-ajax="false" data-inline="true" data-icon="grid" data-add-back-btn="true">Dungeon</a></li>
+                        <li><a href="#characterHome" rel="external" data-ajax="false" data-inline="true" data-icon="grid" data-add-back-btn="true">Character</a></li>
+                        <li><a href="#links" rel="internal" data-ajax="true" data-inline="true" data-icon="info" data-add-back-btn="true">Links</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    <!--**********************************Character News***********************************************-->
+		<div data-role="page" id="characterNews" data-add-back-btn="true" data-theme="c">
+
+            <div data-role="header" data-position="fixed">
+
+                <p><a href="#home"><img style="margin:0 auto;display:block" src="images/branding.png" width="105px" height="40px"></a></p>
+                
+            </div><!-- header -->
+
+
+            <div data-role="content" data-theme="c">
+
+                <h3>Character News Stream</h3>
+                <p>Page is under construction.</p>
+
+            </div>
+
+            <div data-role="footer" data-position="fixed">
+
+                <div data-role="navbar" data-icon-pos="top">
+                    <ul>
+                    	<li><a href="#browse" rel="external" data-ajax="false" data-inline="true" data-icon="search" data-add-back-btn="true">Browse</a></li>
+                    	<li><a href="#dungeonHome" rel="external" data-ajax="false" data-inline="true" data-icon="grid" data-add-back-btn="true">Dungeon</a></li>
+                        <li><a href="#characterHome" rel="external" data-ajax="false" data-inline="true" data-icon="grid" data-add-back-btn="true">Character</a></li>
+                        <li><a href="#links" rel="internal" data-ajax="true" data-inline="true" data-icon="info" data-add-back-btn="true">Links</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        
+        <!-- JavaScript under here -->
+        <!--<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>-->
+        <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
+        <script src="/jquery.validate.min.js"></script>
+        <script type="text/javascript" src="/main.js"></script>
+        <script type="text/javascript" src="/xhrGrabber.js"></script>
+        <script type="text/javascript" src="js/JSON.js"></script>
+    </body>
+</html>

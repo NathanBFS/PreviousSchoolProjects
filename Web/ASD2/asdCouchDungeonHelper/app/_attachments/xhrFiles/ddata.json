@@ -1,0 +1,30 @@
+{"dungeons":[
+    {
+        "dungeonName": ["Dungeon Name:", "Galarui"],
+        "length": ["Length:", "Medium"],
+        "levelGroup": ["Level Group:", "25-30"],
+        "difficulty": ["Difficulty:", "Hero"],
+        "description": ["Description:", "Underwater city swarming with naga and water elementals."]
+    },
+    {
+        "dungeonName": ["Dungeon Name:", "Faelarn"],
+        "length": ["Length:", "Short"],
+        "levelGroup": ["Level Group:", "10-15"],
+        "difficulty": ["Difficulty:", "Squire"],
+        "description": ["Description:", "A forest infested with fae-folk."]
+    },
+    {
+        "dungeonName": ["Dungeon Name:", "Emberin"],
+        "length": ["Length:", "Medium"],
+        "levelGroup": ["Level Group:", "15-20"],
+        "difficulty": ["Difficulty:", "Knight"],
+        "description": ["Description:", "A relatively dormant volcano filled with fire elementals and treasure."]
+    },
+    {
+        "dungeonName": ["Dungeon Name:", "The Necropolis"],
+        "length": ["Length:", "Long"],
+        "levelGroup": ["Level Group:", "20-25"],
+        "difficulty": ["Difficulty:", "Master"],
+        "description": ["Description:", "The City of the Damned.  Crawling with undead minions and ruled by a lich"]
+    }
+]}

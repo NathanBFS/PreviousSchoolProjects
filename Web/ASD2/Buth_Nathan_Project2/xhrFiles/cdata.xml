@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xmlCharacters>
+    <character>
+        <level>10</level>
+        <role>Striker</role>
+        <characterClass>Warlock</characterClass>
+        <race>Githzerai</race>
+        <characterName>Folruin</characterName>
+        <gender>Other</gender>
+        <height>6 feet 3 inches</height>
+        <weight>240 pounds</weight>
+        <age>72</age>
+        <alignment>Neutral</alignment>
+        <deity>Aurom</deity>
+        <mannerismsAndAppearance>Dark and shady.</mannerismsAndAppearance>
+        <personalityTraits>Although neutral they seems to be darker.  Very mysterious to the point of not many people seeing their face.</personalityTraits>
+    </character>
+    <character>
+        <level>11</level>
+        <role>Defender</role>
+        <characterClass>Fighter(Knight)</characterClass>
+        <race>Human</race>
+        <characterName>Martin</characterName>
+        <gender>Male</gender>
+        <height>6 feet 4 inches</height>
+        <weight>210 pounds</weight>
+        <age>32</age>
+        <alignment>Lawful Good</alignment>
+        <deity>Corelion</deity>
+        <mannerismsAndAppearance>Moves simply but somehow arrogantly.  Does not flaunt his appearance but does flaunt his actions effectively.</mannerismsAndAppearance>
+        <personalityTraits>Very proud and often arrogant.</personalityTraits>
+    </character>
+    <character>
+        <level>1</level>
+        <role>Controller</role>
+        <characterClass>Druid</characterClass>
+        <race>Razorclaw Shifter</race>
+        <characterName>Maran</characterName>
+        <gender>Other</gender>
+        <height>7 feet</height>
+        <weight>227 pounds</weight>
+        <age>21</age>
+        <alignment>Chaotic Good</alignment>
+        <deity>Mielikki</deity>
+        <mannerismsAndAppearance>Very ragged and almost crazy looking.</mannerismsAndAppearance>
+        <personalityTraits>Kind to most but will be extremely cruel to anybody that threatens her forest.</personalityTraits>
+    </character>
+    <character>
+        <level>3</level>
+        <role>Leader</role>
+        <characterClass>Bard</characterClass>
+        <race>Tiefling</race>
+        <characterName>Tusler</characterName>
+        <gender>Female</gender>
+        <height>3 feet 7 inches</height>
+        <weight>85 pounds</weight>
+        <age>43</age>
+        <alignment>Good</alignment>
+        <deity>Olladra</deity>
+        <mannerismsAndAppearance>Short but feisty</mannerismsAndAppearance>
+        <personalityTraits>Unstoppable in her quest to become a master bard. A fantastic listener.</personalityTraits>
+    </character>
+    <character>
+        <level>6</level>
+        <role>Striker</role>
+        <characterClass>Avenger</characterClass>
+        <race>Half-Elf</race>
+        <characterName>Torlock</characterName>
+        <gender>Male</gender>
+        <height>5 feet 7 inches</height>
+        <weight>135 pounds</weight>
+        <age>25</age>
+        <alignment>Lawful Good</alignment>
+        <deity>The Silver Flame</deity>
+        <mannerismsAndAppearance>Strong and forceful.</mannerismsAndAppearance>
+        <personalityTraits>Mistrusting and rash due to his young age.</personalityTraits>
+    </character>
+    <character>
+        <level>5</level>
+        <role>Defender</role>
+        <characterClass>Paladin</characterClass>
+        <race>Kalashtar</race>
+        <characterName>Jalah</characterName>
+        <gender>Female</gender>
+        <height>5 feet 11 inches</height>
+        <weight>154 pounds</weight>
+        <age>34</age>
+        <alignment>Lawful Good</alignment>
+        <deity>The Path of Light</deity>
+        <mannerismsAndAppearance>Tall and very direct.</mannerismsAndAppearance>
+        <personalityTraits>Willing to do anything for the good of those around her.  Often is overly bold.</personalityTraits>
+    </character>
+    <character>
+        <level>24</level>
+        <role>Controller</role>
+        <characterClass>Psion</characterClass>
+        <race>Shardmind</race>
+        <characterName>Rrathsgar</characterName>
+        <gender>None</gender>
+        <height>6 feet 4 inches</height>
+        <weight>184 pounds</weight>
+        <age>Unknown</age>
+        <alignment>Good</alignment>
+        <deity>Akadi</deity>
+        <mannerismsAndAppearance>Fierce but calm.</mannerismsAndAppearance>
+        <personalityTraits>Keeps to themselves and doesn't bother anybody.</personalityTraits>
+    </character>
+    <character>
+        <level>18</level>
+        <role>Leader</role>
+        <characterClass>Ranger</characterClass>
+        <race>Drow</race>
+        <characterName>Drizzt</characterName>
+        <gender>Male</gender>
+        <height>5 feet 7 inches</height>
+        <weight>150 pounds</weight>
+        <age>100</age>
+        <alignment>Good</alignment>
+        <deity>Mielikki</deity>
+        <mannerismsAndAppearance>Striking purple eyes.</mannerismsAndAppearance>
+        <personalityTraits>Kind and compassionate, unlike any other Dark Elf to ever exist.</personalityTraits>
+    </character>
+</xmlCharacters>
