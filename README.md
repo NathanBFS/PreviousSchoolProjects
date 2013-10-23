@@ -4,7 +4,7 @@ PreviousSchoolProjects
 This repository contains some of my past classwork from my studies at Full Sail university in their Mobile Development program.
 The dates for these projects range from January 2012 to present day.
 Some projects will not work anymore as their backend has been rendered non-existant but they should still demonstrate my growth as a programmer relatively accurately.
-Classes will first be listed as their acronym and then their full name below. 
+Classes will first be listed as their acronym and then their full name after an asterisk as needed. 
 
 The Web projects and classes are my earliest ones which were completed between January 2012 and August of 2012.
 The order in which these classes were taken are as follows:
