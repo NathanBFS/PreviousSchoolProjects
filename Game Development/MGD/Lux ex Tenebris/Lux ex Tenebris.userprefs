@@ -1,0 +1,19 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Lux ex Tenebris\Scripts\Gameplay\Enemy\SpawnEnemy.cs">
+    <Files>
+      <File FileName="Assets\Lux ex Tenebris\Scripts\Gameplay\WaveCounter.cs" Line="12" Column="53" />
+      <File FileName="Assets\Lux ex Tenebris\Scripts\Gameplay\Enemy\Enemy.cs" Line="33" Column="61" />
+      <File FileName="Assets\Lux ex Tenebris\Scripts\Gameplay\LifeCounter.cs" Line="12" Column="78" />
+      <File FileName="Assets\Lux ex Tenebris\Scripts\Gameplay\Enemy\AstarAI.cs" Line="10" Column="33" />
+      <File FileName="Assets\Lux ex Tenebris\Scripts\Gameplay\Enemy\SpawnEnemy.cs" Line="43" Column="16" />
+      <File FileName="Assets\Lux ex Tenebris\Scripts\Gameplay\ButtonBehavior.cs" Line="1" Column="1" />
+      <File FileName="Assets\Lux ex Tenebris\Scripts\Gameplay\EnemiesCounter.cs" Line="1" Column="1" />
+      <File FileName="Assets\Lux ex Tenebris\Scripts\Gameplay\CrystalCounter.cs" Line="17" Column="36" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
